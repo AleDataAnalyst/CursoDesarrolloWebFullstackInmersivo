@@ -80,3 +80,32 @@ button {
 }
 
 /* Bloque 2 Catálogo filtrado por categorías ... Annie */
+
+
+/* Bloque 3 Influencers... Asier */
+.influencers {
+    width: 1300px;
+    height: 1134px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #F7F8F8;
+}
+h3 {
+    width: 1302px;
+    color: var(--VioletaPrincipal, #695AC8);
+    text-align: center;
+    font-family: Atkinson Hyperlegible;
+    font-size: 67px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.influencers {
+    width: 601px;
+    color: var(--VioletaPrincipal, #695AC8);
+    font-family: Atkinson Hyperlegible;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 50px */
+}
