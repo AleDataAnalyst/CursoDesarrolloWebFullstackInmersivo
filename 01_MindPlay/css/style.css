@@ -14,12 +14,12 @@ body {
 /* Textos */
 
 h1 h2 h3 h4 h5 {
-    font-family: 'Atkinson Hyperlegible';
+    font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
     font-weight: 700;
 }
 
 h1 {
-    color: #32F5F5);
+    color: #32F5F5;
     font-size: 80px;
     font-style: normal;
     font-weight: 700;
@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-    color: #695AC8);
+    color: #695AC8;
     font-size: 72px;
     font-style: normal;
     line-height: 1.5em;
@@ -41,7 +41,7 @@ h4 {
 }
 
 p {
-    font-family: 'Mulish';
+    font-family: 'Mulish', Helvetica, sans-serif;
 }
 
 a {
@@ -99,7 +99,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    font-family: 'Atkinson Hyperlegible';
+    font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -139,7 +139,7 @@ button {
 
 .button-txt {
     text-align: center;
-    font-family: 'Atkinson Hyperlegible';
+    font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
     font-style: normal;
     text-transform: initial;
 }
@@ -189,7 +189,7 @@ h3 {
     width: 1302px;
     color: var(--VioletaPrincipal, #695AC8);
     text-align: center;
-    font-family: Atkinson Hyperlegible;
+    font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
     font-size: 67px;
     font-style: normal;
     font-weight: 700;
@@ -198,7 +198,7 @@ h3 {
 .textoinfluencers {
     width: 601px;
     color: var(--VioletaPrincipal, #695AC8);
-    font-family: Atkinson Hyperlegible;
+    font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -214,6 +214,5 @@ h3 {
 }
 
 
-=======
 /* Footer */
->>>>>>> 1e8a4ee1e54f3a48fbef65bf518337e8d595035f
+
