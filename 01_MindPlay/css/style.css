@@ -143,14 +143,14 @@ h3 {
     font-weight: 700;
     line-height: normal;
 }
-.influencerst {
+.textoinfluencers {
     width: 601px;
     color: var(--VioletaPrincipal, #695AC8);
     font-family: Atkinson Hyperlegible;
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%; /* 50px */
+    line-height: 100%; 
 }
 
 /* Footer */
