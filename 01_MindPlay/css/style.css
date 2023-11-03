@@ -205,4 +205,15 @@ h3 {
     line-height: 100%; 
 }
 
+.img-influencer-minielipse {
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 90px;
+    background: lightgray 50%;
+}
+
+
+=======
 /* Footer */
+>>>>>>> 1e8a4ee1e54f3a48fbef65bf518337e8d595035f
