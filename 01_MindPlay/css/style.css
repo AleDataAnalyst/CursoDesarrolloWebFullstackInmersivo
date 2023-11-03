@@ -85,7 +85,6 @@ button {
     text-align: center;
 }
 
-<<<<<<< HEAD
 /* Bloque 2 Catálogo filtrado por categorías ... Annie */
 
 
@@ -107,7 +106,7 @@ h3 {
     font-weight: 700;
     line-height: normal;
 }
-.influencers {
+.influencerst {
     width: 601px;
     color: var(--VioletaPrincipal, #695AC8);
     font-family: Atkinson Hyperlegible;
@@ -116,46 +115,3 @@ h3 {
     font-weight: 400;
     line-height: 100%; /* 50px */
 }
-=======
-.button-txt {
-    text-align: center;
-    font-family: 'Atkinson Hyperlegible';
-    font-style: normal;
-    text-transform: initial;
-}
-
-/* Tamaños de botones */
-.btn-s {
-    border-radius: 15px;
-    font-size: 20px;
-    line-height: 20px;
-    padding: 10px 16px;
-}
-
-.btn-m {
-    border-radius: 20px;
-    padding: 10px 24px;
-}
-
-.btn-l {
-    border-radius: 20px;
-    padding: 10px 24px;
-}
-
-/* Iniciar sesión */
-.btn-principal {
-    background-color: #695AC8;
-    color: #FFFFFF;
-}
-
-/* Registrarse */
-.btn-secundario {
-    background-color: #32F5F5;
-    color: #695AC8;
-}
-
-/* Bloque 1 Experiencia Destacada - Diana */
-.xpdestacada {}
-
-/* Bloque 2 Catálogo filtrado por categorías ... Annie */
->>>>>>> 1ecda0ccd6563ffd7f204c36e8a13a5a515b44df
