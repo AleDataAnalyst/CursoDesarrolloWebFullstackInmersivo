@@ -13,7 +13,7 @@ body {
 
 /* Textos */
 
-h1 h2 h3 h4 h5 {
+h1, h2, h3, h4, h5 {
     font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
     font-weight: 700;
 }
@@ -165,10 +165,27 @@ button {
 .btn-principal {
     background-color: #695AC8;
     color: #FFFFFF;
+    transition: 0.3s;
+}
+.btn-principal:hover {
+    background-color: #32F5F5;
+}
+.btn-principal:active {
+    background-color: #12E3E3;
+    color: #695AC8;
 }
 
 /* Registrarse */
 .btn-secundario {
     background-color: #32F5F5;
+    color: #695AC8;
+    transition: 0.3s;
+}
+.btn-secundario:hover {
+    background-color: #12E3E3;
+    color: #695AC8;
+}
+.btn-secundario:active {
+    background-color: #12E3E3;
     color: #695AC8;
 }

@@ -13,7 +13,7 @@ body {
 
 /* Textos */
 
-h1 h2 h3 h4 h5 {
+h1, h2, h3, h4, h5 {
     font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
     font-weight: 700;
 }
@@ -49,7 +49,6 @@ a {
     text-decoration: none;
 }
 
-/* NavBar / Navegación */
 /* NavBar / Navegación */
 header {
     background-color: #F7F7F7;
@@ -166,11 +165,36 @@ button {
 .btn-principal {
     background-color: #695AC8;
     color: #FFFFFF;
+    transition: 0.3s;
+}
+.btn-principal:hover {
+    background-color: #32F5F5;
+}
+.btn-secundario:focus {
+    background-color: #12E3E3;
+    color: #695AC8;
+}
+.btn-principal:active {
+    background-color: #12E3E3;
+    color: #695AC8;
 }
 
 /* Registrarse */
 .btn-secundario {
     background-color: #32F5F5;
+    color: #695AC8;
+    transition: 0.3s;
+}
+.btn-secundario:hover {
+    background-color: #12E3E3;
+    color: #FFFFFF;
+}
+.btn-secundario:focus {
+    background-color: #12E3E3;
+    color: #FFFFFF;
+}
+.btn-secundario:active {
+    background-color: #12E3E3;
     color: #695AC8;
 }
 
@@ -197,7 +221,7 @@ h3 {
 }
 .textoinfluencers {
     width: 601px;
-    color: var(--VioletaPrincipal, #695AC8);
+    color: #695AC8;
     font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
     font-size: 50px;
     font-style: normal;
