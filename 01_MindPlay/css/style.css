@@ -15,6 +15,16 @@ body {
     font-weight: 200 1000;
 }
 
+@font-face {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    src: url(./fuente/Atkinson/Atkinson.otf) format(opentype);
+    font-weight: 400 700;
+}
+
+.clearfix {
+    overflow: auto;
+  }
+
 /* ----------- Menú - nav ------------- */
 
 .logo {
@@ -47,12 +57,102 @@ li a {
     font-style: normal;
     line-height: 20px;
     color: #695AC8;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 li a:hover {
     border-radius: 15px;
     background: #695AC8;
     color: #FFF;
+}
+
+li a:focus {
+    border-radius: 15px;
+    background: #32F5F5;
+}
+
+li a:active {
+    background: #695AC8;
+    color: #32F5F5;
+    text-decoration: none;
+}
+
+/* Iniciar sesión */
+.btn-iniciar-sesion {
+    background-color: #695AC8;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+.btn-iniciar-sesion:hover {
+    background-color: #32F5F5;
+}
+.btn-iniciar-sesion:focus {
+    background-color: #12E3E3;
+    color: #695AC8;
+}
+.btn-iniciar-sesion:active {
+    background-color: #12E3E3;
+    color: #695AC8;
+}
+
+/* Registrarse */
+.btn-registrarse {
+    background-color: #32F5F5;
+    color: #695AC8;
+    transition: 0.3s;
+}
+.btn-registrarse:hover {
+    background-color: #12E3E3;
+    color: #FFFFFF;
+}
+.btn-registrarse:focus {
+    background-color: #12E3E3;
+    color: #FFFFFF;
+}
+.btn-registrarse:active {
+    background-color: #12E3E3;
+    color: #695AC8;
+}
+
+/* Buttons / Botones de Navegación */
+header .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 24px;
+}
+
+button {
+    border: none;
+    border-radius: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.button-txt {
+    text-align: center;
+    font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
+    font-style: normal;
+    text-transform: initial;
+}
+
+/* Tamaños de botones */
+.btn-s {
+    border-radius: 15px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 16px;
+}
+
+.btn-m {
+    border-radius: 20px;
+    padding: 10px 24px;
+}
+
+.btn-l {
+    border-radius: 20px;
+    padding: 10px 24px;
 }
 
 /* Textos */
@@ -98,6 +198,12 @@ p {
 /* Textos páginas moradas */
 .white-txt {
     color:#FFFFFF;
+}
+
+.p-intro {
+    font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
 }
 
 /* footer */
@@ -296,6 +402,13 @@ p {
     font-family: "Mulish";
     font-weight: 300;
     line-height: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.contenttimeprice > p {
+    font-size: 12px;
+    line-height: 1.2em;
 }
 
 hr {
@@ -317,7 +430,7 @@ hr {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-decoration-line: underline;
+    text-decoration: none;
     color: #695AC8;
 }
 
