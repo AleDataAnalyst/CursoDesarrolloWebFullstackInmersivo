@@ -204,6 +204,15 @@ p {
     color:#FFFFFF;
 }
 
+.p-seleccion {
+    color: #FFFFFF;
+    font-family: 'Atkinson Hyperlegible';
+    font-size: 40px;
+    font-style: normal;
+    line-height: 1.5em;
+    text-align: center;
+}
+
 /* footer */
 .footercontent {
     display: flex;
@@ -370,14 +379,6 @@ p {
     text-align: center;
 }
 
-#indicaciones-carrusel-headsets .p-seleccion {
-    color: #FFFFFF;
-    font-size: 40px;
-    font-style: normal;
-    line-height: 1.5em;
-    text-align: center;
-}
-
 #indicaciones-carrusel-headsets .carrusel-headsets {
     background: linear-gradient(90deg, rgba(50,245,245,0) 0%, rgba(50,245,245,.6) 50%, rgba(50,245,245,0) 100%);
     display: flex;
@@ -438,11 +439,84 @@ p {
 }
 
 /* Carrusel inmersión */
-/* .indicaciones-carrusel-inmersion { grid-area: 3 / 1 / 4 / 5; } */
+#indicaciones-carrusel-inmersion h3 {
+    color: #32F5F5;
+    font-family: 'Atkinson Hyperlegible';
+    font-size: 67px;
+    font-style: normal;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+/* #indicaciones-carrusel-inmersion .p-seleccion {
+    color: #FFFFFF;
+    font-family: 'Atkinson Hyperlegible';
+    font-size: 40px;
+    font-style: normal;
+    line-height: 1.5em;
+    text-align: center;
+} */
+
+#indicaciones-carrusel-inmersion .carrusel-inmersion {
+    background: linear-gradient(90deg, rgba(50,245,245,0) 0%, rgba(50,245,245,.6) 50%, rgba(50,245,245,0) 100%);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 66px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-left: 0px;
+    padding: 70px;
+}
+
+#indicaciones-carrusel-inmersion .flecha-izq {
+    width: 31px;
+    height: 31px;
+    max-width: 31px;
+    max-height: 31px;
+}
+
+#indicaciones-carrusel-inmersion .flecha-izq:hover {
+    color: #32F5F5;
+    width: 31px;
+    height: 31px;
+    max-width: 31px;
+    max-height: 31px;
+}
+
+#indicaciones-carrusel-inmersion .flecha-der {
+    width: 31px;
+    height: 31px;
+    max-width: 31px;
+    max-height: 31px;
+}
+
+#indicaciones-carrusel-inmersion .flecha-der:hover {
+    color: #32F5F5;
+    width: 31px;
+    height: 31px;
+    max-width: 31px;
+    max-height: 31px;
+}
+
+#indicaciones-carrusel-inmersion .img-carrusel-inmersion {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 66px;
+    justify-content: center;
+}
+
+#indicaciones-carrusel-inmersion .img-headset {
+    max-width: 120px;
+}
 
 /* Textos abajo */
-/* .indicaciones-coltxtizq { grid-area: 4 / 1 / 5 / 3; } */
-
 #indicaciones-col-izq-txt p {
     font-family: 'Mulish';
     font-size: 24px;
