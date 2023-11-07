@@ -55,6 +55,51 @@ li a:hover {
     color: #FFF;
 }
 
+/* Textos */
+h1, h2, h3, h4, h5 {
+    font-family: 'Atkinson Hyperlegible';
+    font-weight: 700;
+}
+
+h1 {
+    color: #32F5F5;
+    font-size: 80px;
+}
+
+h2 {
+    color: #695AC8;
+    font-size: 72px;
+}
+
+h3 {
+    color: #32F5F5;
+    font-size: 67px;
+    line-height: normal;
+    text-align: center;
+}
+
+h4 {
+    color: #32F5F5;
+    font-size: 64px;
+    font-style: normal;
+    line-height: 1.5em;
+}
+
+h5 {
+    color: #32F5F5;
+    font-size: 45px;
+}
+
+p {
+    font-family: 'Mulish';
+    font-size: 24px;
+}
+
+/* Textos páginas moradas */
+.white-txt {
+    color:#FFFFFF;
+}
+
 /* footer */
 .footercontent {
     display: flex;
