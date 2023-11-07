@@ -531,6 +531,85 @@ color: #695AC8;
 padding:16px 10px;
 }
 
+/* --- Login ----*/
+.loginfondo{
+    background-color: #695AC8;
+    max-width:100%;
+    height: 650px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+.login-form> form{
+    padding: 50px 100px;
+    background-color: #FFF;
+    width:400px;
+    border-radius: 20px;
+    
+}
+
+.login-form form>h2 {
+    display: flex;
+    justify-content: center;
+    color: #695AC8;
+    font-family: "Atkinson Hyperlegible";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;  
+}
+
+.login-form form>input {
+    width: 100%;
+    padding: 13px 0px 13px 7px;
+    border-radius: 15px;
+    border: 1px solid #E9E9E9;
+    background: #F7F8F8;
+    font-family: "Mulish";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom:20px;
+}
+
+.login-form form>label {
+    width: 100%;
+    font-family: "Atkinson Hyperlegible";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #695AC8;
+    margin-top: 20px;
+
+}
+.login-form input[type=submit]{
+    width: 100%;
+    background-color: #32F5F5;
+    font-family: "Atkinson Hyperlegible";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    color: #695AC8;
+    padding:16px 10px;
+}
+.login-form form > span{
+    color: #979797;
+    text-align: center;
+    font-family: "Mulish";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+.login-form form>.check{
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
 /* ---Influencers ----*/
 
 .influencers {
