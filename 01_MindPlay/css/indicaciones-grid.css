@@ -4,7 +4,7 @@
     margin: 0;
 }
 body {
-    
+    background-color: #695AC8;
     margin: 0px auto;
     padding: 0px;
 }
@@ -200,12 +200,6 @@ p {
     color:#FFFFFF;
 }
 
-.p-intro {
-    font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-}
-
 /* footer */
 .footercontent {
     display: flex;
@@ -239,8 +233,10 @@ p {
 
 /* Página Indicaciones */
 #main-indicaciones {
-    margin-left: 100%-140px;
-    margin-right: 100%-140px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 60px;
+    margin-bottom: 100px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -249,43 +245,108 @@ p {
         'indicaciones-carrusel-headsets indicaciones-carrusel-headsets indicaciones-carrusel-headsets indicaciones-carrusel-headsets'
         'indicaciones-carrusel-inmersion indicaciones-carrusel-inmersion indicaciones-carrusel-inmersion indicaciones-carrusel-inmersion'
         'indicaciones-col-izq-txt indicaciones-col-izq-txt indicaciones-col-der-img indicaciones-col-der-img';
-    gap: 0px;
-    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 60px;
 }
 
 /* indicaciones-intro-img = #item-0 */
 #indicaciones-intro-img {
     grid-area: indicaciones-intro-img;
+    align-items: center;
+    align-self: auto;
+    align-content:space-around;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* indicaciones-intro-img = #item-1 */
 #indicaciones-carrusel-inmersion {
     grid-area: indicaciones-carrusel-inmersion;
+    align-items: center;
+    align-self: auto;
+    align-content:space-around;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* indicaciones-intro-txt = #item-2 */
 #indicaciones-intro-txt {
     grid-area: indicaciones-intro-txt;
+    align-items: center;
+    align-self: auto;
+    align-content:space-around;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* indicaciones-intro-txt = #item-3 */
 #indicaciones-col-izq-txt {
     grid-area: indicaciones-col-izq-txt;
+    align-items: center;
+    align-self: center;
+    align-content:space-around;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* indicaciones-col-der-img = #item-4 */
 #indicaciones-col-der-img {
     grid-area: indicaciones-col-der-img;
+    align-items: center;
+    align-self: center;
+    align-content:space-around;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* indicaciones-carrusel-headsets = #item-5 */
 #indicaciones-carrusel-headsets {
     grid-area: indicaciones-carrusel-headsets;
+    align-items: center;
+    align-self: auto;
+    align-content:space-around;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
 }
 
 .intro-img {
     min-width: 200px;
     max-width: 379px;
+    position: relative;
+    left: -70px;
+}
+
+.calltoaction-catalogo {
+    background: linear-gradient(90deg, rgba(50,245,245,0) 15%, rgba(50,245,245,1) 65%, rgba(50,245,245,0) 100%);
+    display: flex;
+    align-content:normal;
+    align-self: center;
+    justify-content:space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.p-intro {
+    font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.4em;
+    padding-bottom:20px;
+    margin-bottom:10px;
+}
+
+.highlight {
+    color:#FFFFFF
+    font-size: 'Atkinson Hyperlegible';
+    font-size: 35px;
+    line-height:1.2em;
+    text-align: center;
 }
 
 /* Carrusel headsets */
