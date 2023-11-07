@@ -10,20 +10,10 @@ body {
 }
 
 @font-face {
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Mulish';
     src: url(./fuente/Mulish/Mulish-Regular.otf) format(opentype);
     font-weight: 200 1000;
 }
-
-@font-face {
-    font-family: 'Atkinson Hyperlegible', sans-serif;
-    src: url(./fuente/Atkinson/Atkinson.otf) format(opentype);
-    font-weight: 400 700;
-}
-
-.clearfix {
-    overflow: auto;
-  }
 
 /* ----------- Menú - nav ------------- */
 
