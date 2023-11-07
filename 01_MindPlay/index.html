@@ -1,75 +1,229 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
     <title>MindPlay</title>
-    <link rel="stylesheet" href="css\style.css">
-    <link rel="shortcut icon" href="img/meta-quest-pro.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet"></head>
+</head>
+
 <body>
     <header>
-        <nav>
-            <img class="logo" src="img/logoMindPlay@2x.png" alt="MindPlay">
+        <div class="menu">
+            <a href="index.html"><img src="img/Logo.svg" alt="logo" class="logo"></a>
+            <nav>
                 <ul>
-                    <li><a href="#"></span>Experiencias</a></li>
-                    <li><a href="#">Indicaciones</a></li>
-                    <li><a href="#"></span>Soporte</a></li>
-                    <li><a href="#"></span>Contacto</a></li>
+                    <li><a href="experiencias.html">Experiencias</a></li>
+                    <li><a href="indicacion.html">Indicaciones</a></li>
+                    <li><a href="">Soporte</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="login.html">Inicia sesión</a></li>
+                    <li><a href="registro.html">Registrar</a></li>
                 </ul>
-            <div class="buttons">
-                <button class="button btn-s btn-principal">Iniciar sesión</button>
-                <button class="button btn-s btn-secundario">Registrarse</button>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
-
     
-    <!-- Bloque 1 Experiencia destacada ... Diana -->
-    <section class="xpdestacada">
-        <div class="calltoaction">
-            <h1>Halloween</h1>
+    <!--   Imagen de entrada --> 
+    
+        <div class="portada">
+            <img src="img/terror.png" alt="hallowen" class="imagenHalloween">
+            <img src="img/Halloween.png" alt="" class="letrahalloween">
+            <p>"En esta noche mágica, <br>el miedo se hace realidad."</p>
             <button>Reservar</button>
         </div>
-    </section>
+    
 
-    <!-- Bloque 2 Catálogo filtrado por categorías ... Anniee -->
-    <section class="filtro-categorias">
-        <div class="filtros">
+    <!--   Filtro por experiencias --> 
 
+    <div class="fondoMorado">
+        <div class="contentwhite">
+            <section>
+                <h2 class="subfilter">Descubre más <br>experiencias Inmersivas</h2>
+                <div>
+                    <ul class="filter">
+                        <li class="filter__item">Todas</li>
+                        <li class="filter__item">Cultura</li>
+                        <li class="filter__item">Deportes</li>
+                        <li class="filter__item">Temporada</li>
+                        <li class="filter__item">Terapéuticas</li>
+                        <li class="filter__item">Viajes</li>
+                    </ul>
+                </div>
+
+                <div class="allimages">
+                    <div class="cont-image">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/concierto.png" alt="concierto">
+                        <hr>
+                        <p class="titleimage">Welcome to the Jungle</p>
+                        <p class="subtitle">Producción propia</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+
+                    <div class="cont-image">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/pintura.png" alt="pintura">
+                        <hr>
+                        <p class="titleimage">Pinturas del el Bosco</p>
+                        <p class="subtitle">Coproducción con el Museo de El Prado</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+
+                    <div class="cont-image">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/terapeutica1.jpg" alt="explorar">
+                        <hr>
+                        <p class="titleimage">Acrofobia</p>
+                        <p class="subtitle">Coproducción con el Museo de Historia</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+
+                    <div class="cont-image">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/film.png" alt="explorar">
+                        <hr>
+                        <p class="titleimage">Welcome to the Jungle</p>
+                        <p class="subtitle">Producción propia</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+
+                    <div class="cont-image">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/pintura.png" alt="pintura">
+                        <hr>
+                        <p class="titleimage">Pinturas del el Bosco</p>
+                        <p class="subtitle">Coproducción con el Museo de El Prado</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+
+                    <div class="cont-image">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/terapeutica2.jpg" alt="explorar">
+                        <hr>
+                        <p class="titleimage">Historias de Exploradores</p>
+                        <p class="subtitle">Coproducción con el Museo de Historia</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+
+                    <div class="cont-image">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/film.png" alt="explorar">
+                        <hr>
+                        <p class="titleimage">Welcome to the Jungle</p>
+                        <p class="subtitle">Producción propia</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+
+                    <div class="cont-image">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/terapeutica3.jpg" alt="concierto">
+                        <hr>
+                        <p class="titleimage">Welcome to the Jungle</p>
+                        <p class="subtitle">Producción propia</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+
+                    <div class="cont-image">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/concierto.png" alt="concierto">
+                        <hr>
+                        <p class="titleimage">Welcome to the Jungle</p>
+                        <p class="subtitle">Producción propia</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="cargar"><a href="#">Cargar más</a></span>
+                    </div> 
+                </div>
+            </section>
         </div>
+    </div>
 
-        <div class="clearfix"></div>
-
-        <div class="container">
-            <article></article>
-            <div class="clearfix"></div>
-        </div>
-        
-        
-    </section>
-
-    <!-- Bloque 3 Influencers Marketing... Asier -->
+    <!-- influencers  -->
+    <div class="fondoMorado">
     <section class="influencers">
-        <div class="container"></div>
+        <h3>¡Queremos emocionarte!</h3>
+        <div class="opiniones">
+            <p class="textoinfluencers">Más de 1M de influencers han compartido sus stories</p>
+            <div>
+                <img class="img-influencer-minielipse" src="img/1.img-influencer-minielipse.png"
+                    alt="chica con camiseta naranja y brazos cruzados">
+                <img class="img-influencer-minielipse" src="img/2.img-influencer-minielipse.png"
+                    alt="chica con camiseta blanca cruzando los brazos">
+                <img class="img-influencer-minielipse" src="img/3.img-influencer-minielipse.png" alt="chica sonriendo">
+                <img class="img-influencer-minielipse" src="img/4.img-influencer-minielipse.png"
+                    alt="chico cruzando los brazos">
+            </div>
+            <div class="tarjetas">
+                <img class="testimonio-annie" src="img/Testimonioannie.png" alt="chica con gafas de realidad virtual">
+                <img class="testimonio-asier" src="img/Testimonioasier.png" alt="persona con gafas de realidad virtual">
+                <img class="testimonio-fobia" src="img/Testimoniofobia.png" alt="chico con gafas de realidad virtual">
+            </div>
         </div>
     </section>
-
+</div>
     <!-- Fin Bloques -->
 
-    <footer>
-        <div class="footer-menus">
-            <menu class="nav-footer"></menu>
-            <menu class="empresa"></menu>
-            <menu class="manualmarca"></menu></div>
-        <div class="footer-der">
-            <div class="iconos-rrss"></div>
-            <div class="idioma"></div>
-        </div>
-    </footer>
-</body>
 
-<script></script>
+
+    <!-- Footer -->
+    <footer>
+    <hr>
+    <div class="footercontent">
+        <div class="footerleft">
+            <p>Experiencias</p>
+            <p>Indicaciones</p>
+            <p>Soporte</p>
+            <p>Contacto</p>
+        </div>
+
+        <div class="footerleft">
+            <p>Empresa</p>
+            <p>Acerca de nosotros</p>
+            <p>Inversionistas</p>
+            <p>Preguntas frecuentes</p>
+        </div>
+        
+        <div class="footerright">
+            <img src="img/face.png" alt="">
+            <img src="img/linkdln.png" alt="">
+            <img src="img/twiter.png" alt="">
+            <img src="img/instagram.png" alt="">
+            <img src="img/idioma.png" alt="">   
+        </div>
+    </div>
+    </footer>
+    
+
+
+</body>
 </html>
