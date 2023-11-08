@@ -348,7 +348,8 @@ p {
     padding: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-rows: auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 40px;
     grid-template-areas:
@@ -359,8 +360,8 @@ p {
 
 .encabezado-internas {
     grid-area: encabezado-internas;
+    align-self: start;
     justify-self: start;
-    align-self: initial;
 }
 
 .encabezado-internas .p-intro {
@@ -385,7 +386,7 @@ p {
 /* Textos col der */
 .exp-coldertxt {
     grid-area: exp-coldertxt;
-    align-self: initial;
+    align-self: start;
     justify-self: start;
     margin: 0px;
     padding: 0px;
@@ -415,7 +416,42 @@ p {
     height: auto;
 }
 
-/* Carrusel headsets */
+/* Carrusel flechas */
+.flecha-izq {
+    width: 31px;
+    height: 31px;
+    max-width: 31px;
+    max-height: 31px;
+}
+
+.flecha-izq:hover {
+    color: #32F5F5;
+    width: 31px;
+    height: 31px;
+    max-width: 31px;
+    max-height: 31px;
+}
+
+.flecha-der {
+    width: 31px;
+    height: 31px;
+    max-width: 31px;
+    max-height: 31px;
+}
+
+.flecha-der:hover {
+    color: #32F5F5;
+    width: 31px;
+    height: 31px;
+    max-width: 31px;
+    max-height: 31px;
+}
+
+/* Carrusel experiencias */
+.carrusel-experiencia {
+    grid-area: carrusel-experiencia;
+}
+
 .experiencias-carrusel .carrusel-exp {
     background: linear-gradient(90deg, rgba(50, 245, 245, 0) 0%, rgba(50, 245, 245, .6) 50%, rgba(50, 245, 245, 0) 100%);
     display: flex;
@@ -432,37 +468,7 @@ p {
     padding: 70px;
 }
 
-.experiencias-carrusel .flecha-izq {
-    width: 31px;
-    height: 31px;
-    max-width: 31px;
-    max-height: 31px;
-}
-
-.experiencias-carrusel .flecha-izq:hover {
-    color: #32F5F5;
-    width: 31px;
-    height: 31px;
-    max-width: 31px;
-    max-height: 31px;
-}
-
-.experiencias-carrusel .flecha-der {
-    width: 31px;
-    height: 31px;
-    max-width: 31px;
-    max-height: 31px;
-}
-
-.experiencias-carrusel .flecha-der:hover {
-    color: #32F5F5;
-    width: 31px;
-    height: 31px;
-    max-width: 31px;
-    max-height: 31px;
-}
-
-.experiencias-carrusel .img-carrusel-exp {
+.carrusel-fondoimgtxt {
     display: flex;
     align-content: center;
     flex-direction: row;
@@ -471,10 +477,9 @@ p {
     justify-content: center;
 }
 
-#indicaciones-carrusel-headsets .img-carrusel-exp {
-    max-width: 120px;
-}
-
-.carrusel-experiencia {
-    grid-area: carrusel-experiencia;
+.img-carrusel-exp {
+    min-width: 100px;
+    min-height: 100px;
+    width: 330px;
+    height: 330px;
 }
