@@ -194,6 +194,7 @@ h5 {
 }
 
 p {
+    color: #FFFFFF;
     font-family: 'Mulish';
     font-size: 24px;
     line-height: 1.5em;
@@ -249,10 +250,11 @@ p {
     margin-left: 70px;
     margin-right: 70px;
     margin-top: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     padding: 0px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         'indicaciones-intro-img indicaciones-intro-txt indicaciones-intro-txt indicaciones-intro-txt'
@@ -266,22 +268,18 @@ p {
 /* indicaciones-intro-img = #item-0 */
 #indicaciones-intro-img {
     grid-area: indicaciones-intro-img;
-    align-items: center;
-    align-self: auto;
-    align-content:space-around;
-    justify-content: space-evenly;
+    align-self: center;
+    justify-self: start;
     min-height: fit-content;
     margin: 0px;
     padding: 0px;
 }
 
-/* indicaciones-intro-img = #item-1 */
+/* indicaciones-carrusel-inmersion = #item-1 */
 #indicaciones-carrusel-inmersion {
     grid-area: indicaciones-carrusel-inmersion;
-    align-items: center;
-    align-self: auto;
-    align-content:space-around;
-    justify-content: space-evenly;
+    align-self: start;
+    justify-self: stretch;
     min-height: fit-content;
     margin: 0px;
     padding: 0px;
@@ -290,22 +288,18 @@ p {
 /* indicaciones-intro-txt = #item-2 */
 #indicaciones-intro-txt {
     grid-area: indicaciones-intro-txt;
-    align-items: center;
-    align-self: auto;
-    align-content:space-around;
-    justify-content: space-evenly;
+    align-self: start;
+    justify-self: stretch;
     min-height: fit-content;
     margin: 0px;
     padding: 0px;
 }
 
-/* indicaciones-intro-txt = #item-3 */
+/* indicaciones-col-izq-txt = #item-3 */
 #indicaciones-col-izq-txt {
     grid-area: indicaciones-col-izq-txt;
-    align-items: center;
-    align-self: center;
-    align-content:space-around;
-    justify-content: space-evenly;
+    align-self: start;
+    justify-self: stretch;
     min-height: fit-content;
     margin: 0px;
     padding: 0px;
@@ -314,10 +308,8 @@ p {
 /* indicaciones-col-der-img = #item-4 */
 #indicaciones-col-der-img {
     grid-area: indicaciones-col-der-img;
-    align-items: center;
-    align-self: center;
-    align-content:space-around;
-    justify-content: space-evenly;
+    align-self: start;
+    justify-self: stretch;
     min-height: fit-content;
     margin: 0px;
     padding: 0px;
@@ -326,10 +318,8 @@ p {
 /* indicaciones-carrusel-headsets = #item-5 */
 #indicaciones-carrusel-headsets {
     grid-area: indicaciones-carrusel-headsets;
-    /* align-items: center; */
-    align-self: auto;
-    /* align-content:space-around;
-    justify-content: space-evenly; */
+    align-self:start;
+    justify-self: stretch;
     min-height: fit-content;
     margin: 0px;
     padding: 0px;
@@ -369,6 +359,37 @@ p {
     text-align: center;
 }
 
+/* Carrusel flechas */
+.flecha-izq {
+    width: 31px;
+    height: 31px;
+    max-width: 31px;
+    max-height: 31px;
+}
+
+.flecha-izq:hover {
+    color: #32F5F5;
+    width: 31px;
+    height: 31px;
+    max-width: 31px;
+    max-height: 31px;
+}
+
+.flecha-der {
+    width: 31px;
+    height: 31px;
+    max-width: 31px;
+    max-height: 31px;
+}
+
+.flecha-der:hover {
+    color: #32F5F5;
+    width: 31px;
+    height: 31px;
+    max-width: 31px;
+    max-height: 31px;
+}
+
 /* Carrusel headsets */
 #indicaciones-carrusel-headsets h3 {
     color: #32F5F5;
@@ -395,36 +416,6 @@ p {
     padding: 70px;
 }
 
-#indicaciones-carrusel-headsets .flecha-izq {
-    width: 31px;
-    height: 31px;
-    max-width: 31px;
-    max-height: 31px;
-}
-
-#indicaciones-carrusel-headsets .flecha-izq:hover {
-    color: #32F5F5;
-    width: 31px;
-    height: 31px;
-    max-width: 31px;
-    max-height: 31px;
-}
-
-#indicaciones-carrusel-headsets .flecha-der {
-    width: 31px;
-    height: 31px;
-    max-width: 31px;
-    max-height: 31px;
-}
-
-#indicaciones-carrusel-headsets .flecha-der:hover {
-    color: #32F5F5;
-    width: 31px;
-    height: 31px;
-    max-width: 31px;
-    max-height: 31px;
-}
-
 #indicaciones-carrusel-headsets .img-carrusel-headsets {
     display: flex;
     align-content: center;
@@ -448,15 +439,6 @@ p {
     text-align: center;
 }
 
-/* #indicaciones-carrusel-inmersion .p-seleccion {
-    color: #FFFFFF;
-    font-family: 'Atkinson Hyperlegible';
-    font-size: 40px;
-    font-style: normal;
-    line-height: 1.5em;
-    text-align: center;
-} */
-
 #indicaciones-carrusel-inmersion .carrusel-inmersion {
     background: linear-gradient(90deg, rgba(50,245,245,0) 0%, rgba(50,245,245,.6) 50%, rgba(50,245,245,0) 100%);
     display: flex;
@@ -473,36 +455,6 @@ p {
     padding: 70px;
 }
 
-#indicaciones-carrusel-inmersion .flecha-izq {
-    width: 31px;
-    height: 31px;
-    max-width: 31px;
-    max-height: 31px;
-}
-
-#indicaciones-carrusel-inmersion .flecha-izq:hover {
-    color: #32F5F5;
-    width: 31px;
-    height: 31px;
-    max-width: 31px;
-    max-height: 31px;
-}
-
-#indicaciones-carrusel-inmersion .flecha-der {
-    width: 31px;
-    height: 31px;
-    max-width: 31px;
-    max-height: 31px;
-}
-
-#indicaciones-carrusel-inmersion .flecha-der:hover {
-    color: #32F5F5;
-    width: 31px;
-    height: 31px;
-    max-width: 31px;
-    max-height: 31px;
-}
-
 #indicaciones-carrusel-inmersion .img-carrusel-inmersion {
     display: flex;
     align-content: center;
@@ -512,7 +464,7 @@ p {
     justify-content: center;
 }
 
-#indicaciones-carrusel-inmersion .img-headset {
+#indicaciones-carrusel-inmersion .img-inmersion {
     max-width: 120px;
 }
 
@@ -523,14 +475,14 @@ p {
     line-height: 1.6em;
 }
 
-#indicaciones-col-izq-txt .jugadoresprecio {
+.jugadoresprecio {
     color: #FFFFFF;
     font-family: 'Mulish';
     font-size: 24px;
     line-height: 1.6em;
 }
 
-#indicaciones-col-izq-txt .jugadoresprecio::before {
+.jugadoresprecio::before {
     content: '';
     background: url('img/jugadoresprecio.png') no-repeat center center/cover;
     position: absolute;
