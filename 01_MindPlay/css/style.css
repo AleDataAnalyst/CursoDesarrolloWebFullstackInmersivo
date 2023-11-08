@@ -11,7 +11,7 @@ body {
 
 @font-face {
     font-family: 'Mulish';
-    src: url(./fuente/Mulish/Mulish-Regular.otf) format(opentype);
+    src: url(./fonts/Mulish/Mulish-Regular.otf) format(opentype);
     font-weight: 200 1000;
 }
 
