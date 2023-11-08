@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
 }
+
 body {
     background-color: #695AC8;
     margin: 0px auto;
@@ -30,6 +31,7 @@ body {
 .logo {
     max-width: 180px;
 }
+
 .menu {
     display: flex;
     justify-content: center;
@@ -84,13 +86,16 @@ li a:active {
     color: #FFFFFF;
     transition: 0.3s;
 }
+
 .btn-iniciar-sesion:hover {
     background-color: #32F5F5;
 }
+
 .btn-iniciar-sesion:focus {
     background-color: #12E3E3;
     color: #695AC8;
 }
+
 .btn-iniciar-sesion:active {
     background-color: #12E3E3;
     color: #695AC8;
@@ -102,14 +107,17 @@ li a:active {
     color: #695AC8;
     transition: 0.3s;
 }
+
 .btn-registrarse:hover {
     background-color: #12E3E3;
     color: #FFFFFF;
 }
+
 .btn-registrarse:focus {
     background-color: #12E3E3;
     color: #FFFFFF;
 }
+
 .btn-registrarse:active {
     background-color: #12E3E3;
     color: #695AC8;
@@ -126,59 +134,93 @@ header .buttons {
 button {
     border: none;
     border-radius: 15px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.button-txt {
-    text-align: center;
     font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
     font-style: normal;
     text-transform: initial;
+    font-weight: 700;
+    text-align: center;
 }
 
 /* Tamaños de botones */
 .btn-s {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 1.5em;
     padding: 10px 16px;
 }
 
 .btn-m {
-    border-radius: 20px;
-    padding: 10px 24px;
+    border-radius: 24px;
+    line-height: 1.8em;
+    padding: 16px 24px;
 }
 
 .btn-l {
-    border-radius: 20px;
-    padding: 10px 24px;
+    border-radius: 30px;
+    line-height: 2em;
+    padding: 24px 32px;
 }
 
 /* Botones Experiencias */
+.botones-exp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+    gap: 24px;
+}
 
 /* Botón Demo */
 .btn-demo {
-    background-color: none;
-    border-color: #32F5F5;
-    border-style: solid;
-    border-width: 3px;
+    background-color: transparent;
+    border: 3px solid #32F5F5;
     border-radius: 15px;
+    color: #32F5F5;
+    flex-grow: 1;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 35px;
     font-weight: 700;
     text-align: center;
-    }
-    
-    .button-txt {
-        text-align: center;
-        font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
-        font-style: normal;
-        text-transform: initial;
-    }
+    line-height: 1;
+    /* padding: 20px 16%; */
+    outline: none;
+    transition: all .5s ease;
 }
-/* Botón Reservar */
 
+.btn-demo:hover {
+    color: #695AC8;
+    background-color: #32F5F5;
+}
+
+/* Botón Reservar */
+.btn-reservar {
+    background-color: #32F5F5;
+    /* border-radius: 15px; */
+    color: #695AC8;
+    flex-grow: 1;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    /* padding: 20px 16%; */
+    outline: none;
+    transition: all .5s ease;
+}
+
+.btn-reservar:hover {
+    color: #FFFFFF;
+    background-color: #12E3E3;
+}
 
 /* Textos */
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Atkinson Hyperlegible';
     font-weight: 700;
 }
@@ -223,7 +265,7 @@ p {
 
 /* Textos páginas moradas */
 .white-txt {
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
 .p-seleccion {
@@ -298,7 +340,7 @@ p {
 }
 
 /* Página Experiencias */
-#main-experiencias { 
+#main-experiencias {
     margin-left: 70px;
     margin-right: 70px;
     margin-top: 60px;
@@ -310,10 +352,11 @@ p {
     grid-column-gap: 20px;
     grid-row-gap: 40px;
     grid-template-areas:
-      "encabezado-internas encabezado-internas encabezado-internas encabezado-internas"
-      "exp-colizqimg exp-colizqimg exp-coldertxt exp-coldertxt"
-      "carrusel-experiencia carrusel-experiencia carrusel-experiencia carrusel-experiencia";
+        "encabezado-internas encabezado-internas encabezado-internas encabezado-internas"
+        "exp-colizqimg exp-colizqimg exp-coldertxt exp-coldertxt"
+        "carrusel-experiencia carrusel-experiencia carrusel-experiencia carrusel-experiencia";
 }
+
 .encabezado-internas {
     grid-area: encabezado-internas;
     justify-self: start;
@@ -327,10 +370,10 @@ p {
     font-size: 40px;
     font-style: italic;
     line-height: 1.5em;
-    padding-bottom:20px;
-    margin-bottom:10px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
-  
+
 .exp-colizqimg {
     grid-area: exp-colizqimg;
     justify-self: initial;
@@ -342,8 +385,8 @@ p {
 /* Textos col der */
 .exp-coldertxt {
     grid-area: exp-coldertxt;
-    align-self:initial;
-    justify-self:start;
+    align-self: initial;
+    justify-self: start;
     margin: 0px;
     padding: 0px;
 }
@@ -374,7 +417,7 @@ p {
 
 /* Carrusel headsets */
 .experiencias-carrusel .carrusel-exp {
-    background: linear-gradient(90deg, rgba(50,245,245,0) 0%, rgba(50,245,245,.6) 50%, rgba(50,245,245,0) 100%);
+    background: linear-gradient(90deg, rgba(50, 245, 245, 0) 0%, rgba(50, 245, 245, .6) 50%, rgba(50, 245, 245, 0) 100%);
     display: flex;
     align-content: center;
     align-items: center;
@@ -431,5 +474,7 @@ p {
 #indicaciones-carrusel-headsets .img-carrusel-exp {
     max-width: 120px;
 }
-.carrusel-experiencia { grid-area: carrusel-experiencia; }
-  
+
+.carrusel-experiencia {
+    grid-area: carrusel-experiencia;
+}
