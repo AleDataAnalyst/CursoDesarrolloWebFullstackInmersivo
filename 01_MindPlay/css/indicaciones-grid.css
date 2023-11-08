@@ -512,7 +512,7 @@ p {
     justify-content: center;
 }
 
-#indicaciones-carrusel-inmersion .img-headset {
+#indicaciones-carrusel-inmersion .img-inmersion {
     max-width: 120px;
 }
 
@@ -523,14 +523,14 @@ p {
     line-height: 1.6em;
 }
 
-#indicaciones-col-izq-txt .jugadoresprecio {
+.jugadoresprecio {
     color: #FFFFFF;
     font-family: 'Mulish';
     font-size: 24px;
     line-height: 1.6em;
 }
 
-#indicaciones-col-izq-txt .jugadoresprecio::before {
+.jugadoresprecio::before {
     content: '';
     background: url('img/jugadoresprecio.png') no-repeat center center/cover;
     position: absolute;
