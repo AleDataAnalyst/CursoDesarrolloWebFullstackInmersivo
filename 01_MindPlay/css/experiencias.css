@@ -450,31 +450,28 @@ p {
 /* Carrusel experiencias */
 .carrusel-experiencia {
     grid-area: carrusel-experiencia;
-}
-
-.experiencias-carrusel .carrusel-exp {
-    background: linear-gradient(90deg, rgba(50, 245, 245, 0) 0%, rgba(50, 245, 245, .6) 50%, rgba(50, 245, 245, 0) 100%);
     display: flex;
     align-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 66px;
-    justify-content: space-evenly;
-    margin-top: 20px;
-    margin-right: 0px;
-    margin-top: 40px;
-    margin-left: 0px;
-    padding: 70px;
+    justify-content: space-around;
+    margin: 20px 70px;
 }
 
 .carrusel-fondoimgtxt {
+    background-color: #FFFFFF;
+    width: 80%;
+    border-radius: 15px;
     display: flex;
     align-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 66px;
-    justify-content: center;
+    justify-content:flex-start;
+    margin: 24px 2%;
+    padding: 24px 2%;
 }
 
 .img-carrusel-exp {
@@ -482,4 +479,17 @@ p {
     min-height: 100px;
     width: 330px;
     height: 330px;
+    flex-grow: 1;
+    position: relative;
+    left: -50px;
 }
+
+.carrusel-exp-testimonio {
+    vertical-align: middle;
+    color: #695AC8;
+    font-family: 'Atkinson Hyperlegible';
+    font-size: 22px;
+    line-height: 1.5em;
+    flex-grow: 2;
+}
+
