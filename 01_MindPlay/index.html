@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+        rel="stylesheet">
     <title>MindPlay</title>
 </head>
 
 <body>
     <header>
-        <div class="menu">
-            <a href="index.html"><img src="img/Logo.svg" alt="logo" class="logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="experiencias.html">Experiencias</a></li>
-                    <li><a href="indicaciones.html">Indicaciones</a></li>
-                    <li><a href="soporte.html">Soporte</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="login.html" class="btn-iniciar-sesion btn-s">Inicia sesión</a></li>
-                    <li><a href="registro.html" class="btn-registrarse btn-s">Registrar</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="menu-principal">
+            <a href="index.html"><img src="img/Logo.svg" alt="MindPlay" class="logo"></a>
+            <ul>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="indicaciones.html">Indicaciones</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="menu-principal-botones">
+                <button><a href="login.html" class="btn-iniciar-sesion btn-s">Inicia sesión</a></button>
+                <button><a href="registro.html" class="btn-registrarse btn-s">Registrar</a></button>
+            </div>
+        </nav>
     </header>
-    
-    <!--   Imagen de entrada --> 
-    
-        <div class="portada">
-            <img src="img/terror.png" alt="hallowen" class="imagenHalloween">
+
+    <!--   Imagen de entrada -->
+
+    <div class="portada">
+        <img src="img/terror.png" alt="Hallowen" class="imagenHalloween">
+        <div class="portada-col-izq-txt">
             <img src="img/Halloween.png" alt="" class="letrahalloween">
             <p>"En esta noche mágica, <br>el miedo se hace realidad."</p>
-            <button>Reservar</button>
+            <button class="btn-reservar">Reservar</button>
         </div>
-    
 
-    <!--   Filtro por experiencias --> 
+    </div>
+
+    <!--   Filtro por experiencias -->
 
     <div class="fondoMorado">
         <div class="contentwhite">
@@ -162,7 +167,7 @@
                     </div>
                     <div>
                         <span class="cargar"><a href="#">Cargar más</a></span>
-                    </div> 
+                    </div>
                 </div>
             </section>
         </div>
@@ -170,60 +175,75 @@
 
     <!-- influencers  -->
     <div class="fondoMorado">
-    <section class="influencers">
-        <h3>¡Queremos emocionarte!</h3>
-        <div class="opiniones">
-            <p class="textoinfluencers">Más de 1M de influencers han compartido sus stories</p>
-            <div>
-                <img class="img-influencer-minielipse" src="img/1.img-influencer-minielipse.png"
-                    alt="chica con camiseta naranja y brazos cruzados">
-                <img class="img-influencer-minielipse" src="img/2.img-influencer-minielipse.png"
-                    alt="chica con camiseta blanca cruzando los brazos">
-                <img class="img-influencer-minielipse" src="img/3.img-influencer-minielipse.png" alt="chica sonriendo">
-                <img class="img-influencer-minielipse" src="img/4.img-influencer-minielipse.png"
-                    alt="chico cruzando los brazos">
+        <section class="influencers">
+            <h3>¡Queremos emocionarte!</h3>
+            <div class="opiniones">
+                <p class="textoinfluencers">Más de 1M de influencers han compartido sus stories</p>
+                <div>
+                    <img class="img-influencer-minielipse" src="img/1.img-influencer-minielipse.png"
+                        alt="chica con camiseta naranja y brazos cruzados">
+                    <img class="img-influencer-minielipse" src="img/2.img-influencer-minielipse.png"
+                        alt="chica con camiseta blanca cruzando los brazos">
+                    <img class="img-influencer-minielipse" src="img/3.img-influencer-minielipse.png"
+                        alt="chica sonriendo">
+                    <img class="img-influencer-minielipse" src="img/4.img-influencer-minielipse.png"
+                        alt="chico cruzando los brazos">
+                </div>
+                <div class="tarjetas">
+                    <img class="testimonio-annie" src="img/Testimonioannie.png"
+                        alt="chica con gafas de realidad virtual">
+                    <img class="testimonio-asier" src="img/Testimonioasier.png"
+                        alt="persona con gafas de realidad virtual">
+                    <img class="testimonio-fobia" src="img/Testimoniofobia.png"
+                        alt="chico con gafas de realidad virtual">
+                </div>
             </div>
-            <div class="tarjetas">
-                <img class="testimonio-annie" src="img/Testimonioannie.png" alt="chica con gafas de realidad virtual">
-                <img class="testimonio-asier" src="img/Testimonioasier.png" alt="persona con gafas de realidad virtual">
-                <img class="testimonio-fobia" src="img/Testimoniofobia.png" alt="chico con gafas de realidad virtual">
-            </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
     <!-- Fin Bloques -->
 
 
 
     <!-- Footer -->
     <footer>
-    <hr>
-    <div class="footercontent">
-        <div class="footerleft">
-            <p>Experiencias</p>
-            <p>Indicaciones</p>
-            <p>Soporte</p>
-            <p>Contacto</p>
+        <div class="footer-contenedormenus">
+            <div class="footerleft">
+                <nav class="menufooter">
+                    <ul>
+                        <li><a href="/experiencias.html"></a>Experiencias</li>
+                        <li><a href="/indicaciones.html"></a>Indicaciones</li>
+                        <li><a href="/soporte.html"></a>Soporte</li>
+                        <li><a href="/contacto.html"></a>Contacto</li>
+                    </ul>
+                </nav>
+                <nav class="menufooter-empresa">
+                    <ul>
+                        <li><a href="/empresa.html"></a>Empresa</li>
+                        <li><a href="/acerca.html"></a>Acerca de nosotros</li>
+                        <li><a href="/inversionistas.html"></a>Inversionistas</li>
+                        <li><a href="/faq.html"></a>Preguntas frecuentes</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footerright">
+                <div class="rrss">
+                    <a href="https://facebook.com"><img src="img/face.png" alt="Facebook"></a>
+                    <a href="https://linkedin.com"><img src="img/linkdln.png" alt="LinkedIn"></a>
+                    <a href="https://twitter.com"><img src="img/twiter.png" alt="Twitter"></a>
+                    <a href="https://instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
+                </div>
+
+                <button class="btn-idioma"><img src="img/ic-idiomamundo.svg" alt="Seleccionar idioma"><p>Español</p><img src="img/chevron-down.svg" alt="seleccionar idioma"></button>
+            </div>
         </div>
 
-        <div class="footerleft">
-            <p>Empresa</p>
-            <p>Acerca de nosotros</p>
-            <p>Inversionistas</p>
-            <p>Preguntas frecuentes</p>
-        </div>
-        
-        <div class="footerright">
-            <img src="img/face.png" alt="">
-            <img src="img/linkdln.png" alt="">
-            <img src="img/twiter.png" alt="">
-            <img src="img/instagram.png" alt="">
-            <img src="img/idioma.png" alt="">   
-        </div>
-    </div>
+        <p>Desarrollado en el Curso de Desarrollo Web Fullstack + Tecnologías Inmersivas de Fundación Tomillo y Factoría
+            F5</p>
     </footer>
-    
+
 
 
 </body>
+
 </html>
