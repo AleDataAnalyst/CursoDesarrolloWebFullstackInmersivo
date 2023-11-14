@@ -235,6 +235,12 @@ p {
     font-size: 24px;
 }
 
+p-morado {
+    color: #695AC8;
+    font-family: 'Mulish';
+    font-size: 24px;
+}
+
 /* Textos páginas moradas */
 .white-txt {
     color: #FFFFFF;
@@ -794,7 +800,6 @@ p {
     width: 380px;
     height: 697px;
     background: #695AC8;
-    display: inline-flex;
     border-radius: 25px;
     display: flex;
     gap: 26px;
@@ -805,26 +810,30 @@ p {
 
 /* Página y Formulario de Contacto */
 .contacto-main {
-    display: grid; 
-    grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 20px 0px; 
-    grid-template-areas: 
-        "contacto-encabezado contacto-encabezado contacto-encabezado contacto-encabezado"
-        "area-contact-form area-contact-form area-contact-form area-contact-form"; 
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "contacto-encabezado contacto-encabezado contacto-encabezado contacto-encabezado"
+      "area-contact-form area-contact-form area-contact-form area-contact-form"
+      "area-contact-form area-contact-form area-contact-form area-contact-form";
     margin: 0;
     padding: 24px 10%;
-}
+  }
 
 .contacto-encabezado {
     grid-area: contacto-encabezado;
-    grid-template-rows: auto; 
-    padding: 10%;
+    align-self: start;
+    justify-self: center;
     margin:0;
 }
 
 .area-contact-form {
     grid-area: area-contact-form;
+    align-self: start;
+    justify-self: center;
     grid-template-rows: auto; 
     padding: 10%;
     margin:0;
@@ -844,30 +853,67 @@ h2 {
     background-color: #FFFFFF;
     border-radius: 25px;
     box-shadow: 0px 141px 200px -80px rgba(25, 58, 75, 0.30);
-    width: 874px;
-    height: 528px;
+    width: 100%;
+    height: auto;
     padding: 60px 220px;
-    flex-direction: column;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 44px;
     flex-shrink: 0;
 }
 
-form {
+.contacto-main form {
     display: flex;
-    width: 874px;
-    height: 528px;
+    width: 100%;
+    height: auto;
     flex-direction: column;
     align-items: flex-start;
+    align-self: center;
     justify-content: space-evenly;
     gap: 8px;
     flex-shrink: 0;
 }
 
-form label {
-    border-radius: 12px;
+fieldset {
+    border: none;
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    width: 100%;
+}
+
+.contacto-main form label {
+    color: #695AC8;
+    font-family: 'Mulish';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2em; /* 171.429% */
+    margin: 32px 0px 8px 0px;
+    padding: 0;
+}
+
+.contacto-main form input[type=label] {
+    align-self: center;
+    border-radius: 15px;
+    border: 1px solid #E0E0E0;
+    background: #F7F8F8;
+    color: #695AC8;
+    letter-spacing: 0.14px;
+    width: 100%;
+    height: 40px;
+    /* margin: 32px 0px 8px 0px;
+    padding: 0; */
+    flex-shrink: 0;
+}
+
+.contacto-main form input[type=text] {
+    border-radius: 15px;
     border: 1px solid #E0E0E0;
     background: #F7F8F8;
     color: #695AC8;
@@ -877,16 +923,110 @@ form label {
     font-weight: 500;
     line-height: 1.2em; /* 171.429% */
     letter-spacing: 0.14px;
-    width: 80%;
+    width: 100%;
     height: 40px;
+    margin: 8px 0px 16px 0px;
     padding: 16px 24px;
-    gap: 8px;
-    flex-shrink: 0;
 }
 
-form input {
-    background-color: #F7F8F8;
+.contacto-main form input[type=checkbox], input[type=radio]  {
+    border-radius: 15px;
+    border: 1px solid #E0E0E0;
+    background: #F7F8F8;
+    width: 32px;
+    height: 32px;
+    margin: 8px 0px;
+    padding: 8px 8px;
+}
+
+.contacto-main form select {
+    border-radius: 15px;
+    border: 1px solid #E0E0E0;
+    background: #F7F8F8;
+    color: #695AC8;
+    font-family: 'Mulish';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2em; /* 171.429% */
+    width: 100%;
+    height: auto;
+    margin: 12px 0px;
+    padding: 16px 24px;
+}
+
+.contacto-main form option {
+    border-radius: 15px;
+    border: 1px solid #E0E0E0;
+    background: #F7F8F8;
+    color: #695AC8;
+    font-family: 'Mulish';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2em; /* 171.429% */
+    width: 100%;
+    height: 40px;
+    margin: 40px 0px;
+    padding: 16px 24px;
+}
+
+.contacto-main form .btn-enviar {
+    background-color: #695AC8;
     border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    margin: 24px 16px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    width: 60%;
+    transition: 0.3s;
+}
+
+.contacto-main form .btn-enviar:hover[type=button] {
+    background-color: #32F5F5;
+    color: #695AC8;
+}
+
+.contacto-main form .btn-enviar:focus {
+    background-color: #12E3E3;
+    color: #695AC8;
+}
+
+/* .contacto-main form input[type=button], input[type=submit], input[type=reset] {
+    align-self: center;
+    background-color: #695AC8;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    margin: 24px 16px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    width: 60%;
+    transition: 0.3s;
+}
+
+.contacto-main form input:hover[type=button], input:hover[type=submit], input:hover[type=reset] {
+    background-color: #32F5F5;
+    color: #695AC8;
+}
+
+.contacto-main form input:focus[type=button], input:hover[type=submit], input:hover[type=reset] {
+    background-color: #12E3E3;
+    color: #695AC8;
+} */
+
+.contacto-main form textarea {
+    display: block;
+    overflow: auto;
+    align-self: center;
+    border-radius: 15px;
+    border: 1px solid #E0E0E0;
+    background: #F7F8F8;
     color: #695AC8;
     font-family: 'Mulish';
     font-size: 24px;
@@ -894,6 +1034,15 @@ form input {
     font-weight: 500;
     line-height: 1.2em; /* 171.429% */
     letter-spacing: 0.14px;
+    width: 100%;
+    min-height: 400px;
+    margin: 24px 0px;
+    padding: 16px 24px;
+    flex-shrink: 0;
+}
+
+.contacto-main form textarea:focus {
+    border: 1px solid #32F5F5;
 }
 
 .asterisco {
@@ -906,11 +1055,18 @@ form input {
     letter-spacing: 0.14px;
 }
 
+#success_message {
+    display: none;
+  }
+  
+
 .contacto-datos {
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    align-self: center;
+    gap: 54px;
 }
 
 .datos {
@@ -918,6 +1074,9 @@ form input {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.datos > p {
     color: #695AC8;
     font-family: 'Mulish';
     font-size: 13px;
@@ -926,3 +1085,5 @@ form input {
     line-height: 20px; /* 153.846% */
     letter-spacing: 0.26px;
 }
+
+/* Form externa */
