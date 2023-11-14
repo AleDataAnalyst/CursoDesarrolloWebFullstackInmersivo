@@ -472,16 +472,16 @@ p {
     justify-content:flex-start;
     margin: 24px 2%;
     padding: 24px 2%;
+    z-index: 1;
 }
 
-.img-carrusel-exp {
+.carrusel-fondoimgtxt .img-carrusel-exp {
     min-width: 100px;
     min-height: 100px;
     width: 330px;
     height: 330px;
     flex-grow: 1;
-    position: relative;
-    left: -50px;
+    z-index: 2;
 }
 
 .carrusel-exp-testimonio {
