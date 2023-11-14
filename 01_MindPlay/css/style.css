@@ -3,8 +3,9 @@
     padding: 0;
     margin: 0;
 }
+
 body {
-    
+
     margin: 0px auto;
     padding: 0px;
 }
@@ -93,13 +94,16 @@ header .logo {
     text-decoration: none;
     transition: 0.3s;
 }
+
 .btn-iniciar-sesion:hover {
     background-color: #32F5F5;
 }
+
 .btn-iniciar-sesion:focus {
     background-color: #12E3E3;
     color: #695AC8;
 }
+
 .btn-iniciar-sesion:active {
     background-color: #12E3E3;
     color: #695AC8;
@@ -112,14 +116,17 @@ header .logo {
     text-decoration: none;
     transition: 0.3s;
 }
+
 .btn-registrarse:hover {
     background-color: #12E3E3;
     color: #FFFFFF;
 }
+
 .btn-registrarse:focus {
     background-color: #12E3E3;
     color: #FFFFFF;
 }
+
 .btn-registrarse:active {
     background-color: #12E3E3;
     color: #695AC8;
@@ -184,7 +191,11 @@ button {
 }
 
 /* Textos */
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Atkinson Hyperlegible';
     font-weight: 700;
 }
@@ -226,7 +237,7 @@ p {
 
 /* Textos páginas moradas */
 .white-txt {
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
 .p-intro {
@@ -324,7 +335,7 @@ footer p {
 
 /* -- Index -- */
 /* ----------  Portada  ------------   */
-.portada{
+.portada {
     position: relative;
 }
 
@@ -368,7 +379,7 @@ footer p {
     background-color: #32F5F5;
     font-family: "Atkinson Hyperlegible";
     font-size: 35px;
-    border:none;
+    border: none;
     font-weight: 700;
 }
 
@@ -393,8 +404,8 @@ footer p {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin:0 auto;
-    background-color: #695AC8;   
+    margin: 0 auto;
+    background-color: #695AC8;
 }
 
 .contentwhite {
@@ -404,8 +415,8 @@ footer p {
     background: #F7F7F7;
     width: 1100px;
     height: auto;
-    position:relative;
-    top:-60px
+    position: relative;
+    top: -60px
 }
 
 .filter {
@@ -486,7 +497,7 @@ footer p {
     font-weight: 400;
     color: #FFF;
     margin-bottom: 12px;
-    
+
 }
 
 .contenttimeprice {
@@ -501,7 +512,7 @@ footer p {
     padding-bottom: 8px;
 }
 
-.contenttimeprice > p {
+.contenttimeprice>p {
     font-size: 12px;
     line-height: 1.2em;
 }
@@ -530,42 +541,44 @@ hr {
 }
 
 /* -----------   Registro   ----------*/
-.right-form > h2, p{
-    display:flex;
+.right-form>h2,
+p {
+    display: flex;
     justify-content: center;
     font-family: "Mulish";
 }
 
-.check > span{
+.check>span {
     font-family: "Mulish";
     color: #979797;
 
-font-family: "Mulish";
-font-size: 14px;
+    font-family: "Mulish";
+    font-size: 14px;
 }
-.right-form>span{
+
+.right-form>span {
     font-family: "Mulish";
 }
 
-.left-form{
-    
+.left-form {
+
     overflow: hidden;
-    float:left;
+    float: left;
     background-size: cover;
 }
 
-.right-form{
+.right-form {
     width: 50%;
     height: 100%;
-    margin:0px;
-    float:left;
+    margin: 0px;
+    float: left;
     background-color: white;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
 }
 
-.right-form form{
+.right-form form {
     height: 100%;
     width: 50%;
     display: flex;
@@ -609,48 +622,49 @@ font-size: 14px;
     margin-top: 20px;
 }
 
-.check{
-width: 100%;
-margin: 20px 0px;
+.check {
+    width: 100%;
+    margin: 20px 0px;
 }
 
-.right-form form > span{
-font-family: "Mulish";
-color: rgba(0, 0, 0, 0.44);
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-top:20px;
+.right-form form>span {
+    font-family: "Mulish";
+    color: rgba(0, 0, 0, 0.44);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
 }
-    
-.right-form input[type=submit]{
-width: 100%;
-background-color: #32F5F5;
-font-family: "Atkinson Hyperlegible";
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: 20px;
-color: #695AC8;
-padding:16px 10px;
+
+.right-form input[type=submit] {
+    width: 100%;
+    background-color: #32F5F5;
+    font-family: "Atkinson Hyperlegible";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    color: #695AC8;
+    padding: 16px 10px;
 }
 
 /* --- Login ----*/
-.loginfondo{
+.loginfondo {
     background-color: #695AC8;
-    max-width:100%;
+    max-width: 100%;
     height: 650px;
     align-items: center;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
-.login-form> form{
+
+.login-form>form {
     padding: 50px 100px;
     background-color: #FFF;
-    width:400px;
+    width: 400px;
     border-radius: 20px;
-    
+
 }
 
 .login-form form>h2 {
@@ -662,7 +676,7 @@ padding:16px 10px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
 }
 
 .login-form form>input {
@@ -676,7 +690,7 @@ padding:16px 10px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 .login-form form>label {
@@ -690,7 +704,8 @@ padding:16px 10px;
     margin-top: 20px;
 
 }
-.login-form input[type=submit]{
+
+.login-form input[type=submit] {
     width: 100%;
     background-color: #32F5F5;
     font-family: "Atkinson Hyperlegible";
@@ -699,9 +714,10 @@ padding:16px 10px;
     font-weight: 600;
     line-height: 20px;
     color: #695AC8;
-    padding:16px 10px;
+    padding: 16px 10px;
 }
-.login-form form > span{
+
+.login-form form>span {
     color: #979797;
     text-align: center;
     font-family: "Mulish";
@@ -709,7 +725,8 @@ padding:16px 10px;
     display: flex;
     justify-content: center;
 }
-.login-form form>.check{
+
+.login-form form>.check {
     margin-top: 0px;
     display: flex;
     align-items: center;
@@ -723,12 +740,13 @@ padding:16px 10px;
     margin: 0 auto;
     border-radius: 40px;
     background: #F7F8F8;
-    margin-top:10px;
-    
-    padding-top:50px;
+    margin-top: 10px;
+
+    padding-top: 50px;
     padding-bottom: 50px;
 }
-.influencers > h3 {
+
+.influencers>h3 {
     width: 1302px;
     color: #695AC8;
     text-align: center;
@@ -743,21 +761,21 @@ padding:16px 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     padding: 2%;
 }
 
 .textoinfluencers {
     width: 601px;
-    color:#695AC8;
+    color: #695AC8;
     font-family: "Atkinson Hyperlegible";
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.2em;
-    display: block; 
-    margin-right:2%;
+    display: block;
+    margin-right: 2%;
 }
 
 .img-influencer-minielipse {
@@ -775,7 +793,7 @@ padding:16px 10px;
     width: 380px;
     height: 697px;
     background: #695AC8;
-    display:inline-flex;
+    display: inline-flex;
     border-radius: 25px;
     display: flex;
     gap: 26px;
