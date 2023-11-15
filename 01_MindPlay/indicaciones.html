@@ -118,8 +118,42 @@
             <div class="idioma"></div>
         </div>
     </footer>
-</body>
 
-<script></script>
+    <!-- Librería slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Add slick.js before your closing <body> tag, after jQuery (requires jQuery 1.7 +) -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+        $('.img-carrusel-headsets').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  arrows: true,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  arrows: true,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+    </script>
+</body>
 
 </html>
