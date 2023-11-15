@@ -1119,7 +1119,6 @@ input[type=radio] {
 /* iPhone Pro 11 vertical */
 @media (max-width: 834px), screen and (orientation: portrait) {
 
-    /* … */
     .contacto-main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 0.5fr;
