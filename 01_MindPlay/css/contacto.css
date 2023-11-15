@@ -807,7 +807,6 @@ p {
     margin-bottom: 5%;
 }
 
-
 /* Página y Formulario de Contacto */
 .contacto-main {
     display: grid;
@@ -815,27 +814,28 @@ p {
     gap: 20px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "contacto-encabezado contacto-encabezado contacto-encabezado contacto-encabezado"
-      "area-contact-form area-contact-form area-contact-form area-contact-form"
-      "area-contact-form area-contact-form area-contact-form area-contact-form";
+        "contacto-encabezado contacto-encabezado contacto-encabezado contacto-encabezado"
+        "area-contact-form area-contact-form area-contact-form area-contact-form"
+        "area-contact-form area-contact-form area-contact-form area-contact-form";
     margin: 0;
     padding: 24px 10%;
-  }
+}
 
 .contacto-encabezado {
     grid-area: contacto-encabezado;
     align-self: start;
     justify-self: center;
-    margin:0;
+    padding: 4% 16%;
+    margin: 0;
 }
 
 .area-contact-form {
     grid-area: area-contact-form;
     align-self: start;
     justify-self: center;
-    grid-template-rows: auto; 
+    grid-template-rows: auto;
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
 .contacto-main h1,
@@ -845,6 +845,7 @@ h2 {
 
 .contacto-main h2 {
     color: #FFFFFF;
+    text-align: center;
 }
 
 .contacto-main h5 {
@@ -857,12 +858,11 @@ h2 {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    align-content: center;
     justify-content: space-around;
     background-color: #FFFFFF;
     border-radius: 25px;
     box-shadow: 0px 141px 200px -80px rgba(25, 58, 75, 0.30);
-    width: 72vw;
+    width: 50vw;
     height: auto;
     padding: 64px 64px;
     gap: 44px;
@@ -897,7 +897,8 @@ h2 {
     margin: 0;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-around;    align-items: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .contacto-main form label {
@@ -906,19 +907,10 @@ h2 {
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.2em; /* 171.429% */
-    margin: 32px 0px 8px 0px;
+    line-height: 1.2em;
+    margin: 8px 0px 8px 0px;
     padding: 0;
 }
-
-/* .contacto-main form input {
-    display: block;
-    border-radius: 15px;
-    border: 1px solid #E0E0E0;
-    background: #F7F8F8;
-    width: 88%;
-    height: 40px;
-} */
 
 .contacto-main form input[type=text] {
     display: block;
@@ -938,7 +930,8 @@ h2 {
     padding: 8px 16px;
 }
 
-.contacto-main form input[type=checkbox], input[type=radio]  {
+.contacto-main form input[type=checkbox],
+input[type=radio] {
     border-radius: 15px;
     border: 1px solid #E0E0E0;
     background: #F7F8F8;
@@ -958,11 +951,11 @@ h2 {
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.2em; /* 171.429% */
-    width: 91%;
+    line-height: 1.2em;
+    width: 88%;
     height: auto;
     margin: 12px 0px;
-    padding: 16px 24px;
+    padding: 16px 16px;
 }
 
 .contacto-main form option {
@@ -974,7 +967,8 @@ h2 {
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.2em; /* 171.429% */
+    line-height: 1.2em;
+    /* 171.429% */
     width: 100%;
     height: 40px;
     margin: 40px 0px;
@@ -1007,6 +1001,7 @@ h2 {
     border-radius: 15px;
     color: white;
     cursor: pointer;
+    font-size: 24px;
     margin: 24px 16px;
     padding: 16px 32px;
     text-align: center;
@@ -1058,6 +1053,20 @@ h2 {
     letter-spacing: 0.14px;
 }
 
+.inline {
+    display: inline;
+}
+
+.centrar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0 0 0;
+}
+
 .alert-success {
     display: block;
     color: #32F5F5;
@@ -1071,8 +1080,7 @@ h2 {
 
 #success_message {
     display: none;
-  }
-  
+}
 
 .contacto-datos {
     display: flex;
@@ -1105,4 +1113,269 @@ h2 {
 
 .datos .p-email::before {
     content: url(img/ic-email.svg);
+}
+
+/* Media Queries */
+/* iPhone Pro 11 vertical */
+@media (max-width: 834px), screen and (orientation: portrait) {
+
+    /* … */
+    .contacto-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 0.5fr;
+        gap: 16px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "contacto-encabezado contacto-encabezado contacto-encabezado contacto-encabezado"
+            "area-contact-form area-contact-form area-contact-form area-contact-form"
+            "area-contact-form area-contact-form area-contact-form area-contact-form";
+        margin: 0;
+        padding: 16px 8%;
+    }
+
+    .contacto-encabezado {
+        grid-area: contacto-encabezado;
+        align-self: start;
+        justify-self: center;
+        padding: 4% 8%;
+        margin: 0;
+    }
+
+    .area-contact-form {
+        grid-area: area-contact-form;
+        align-self: start;
+        justify-self: center;
+        grid-template-rows: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contacto-main h1,
+    h2 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .contacto-main h2 {
+        color: #FFFFFF;
+        font-size: 24px;
+    }
+
+    .contacto-main h5 {
+        color: #32F5F5;
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .contacto-form-contenedor {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #FFFFFF;
+        border-radius: 25px;
+        box-shadow: 0px 141px 200px -80px rgba(25, 58, 75, 0.30);
+        width: 72vw;
+        height: auto;
+        padding: 64px 64px;
+        gap: 44px;
+    }
+
+    .contacto-main form {
+        display: flex;
+        width: 72vw;
+        height: auto;
+        align-items: center;
+        align-self: center;
+        justify-content: space-evenly;
+        gap: 8px;
+        flex-shrink: 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    .contacto-main form fieldset {
+        border: none;
+        display: flex;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-block-start: 0em;
+        padding-inline-start: 0em;
+        padding-inline-end: 0em;
+        padding-block-end: 0em;
+        min-inline-size: min-content;
+        width: 72vw;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: center;
+    }
+
+    .contacto-main form label {
+        color: #695AC8;
+        font-family: 'Mulish';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2em;
+        margin: 8px 0px 6px 0px;
+        padding: 0;
+    }
+
+    .contacto-main form input[type=text] {
+        display: block;
+        border-radius: 15px;
+        border: 1px solid #E0E0E0;
+        background: #F7F8F8;
+        color: #695AC8;
+        width: 72vw;
+        height: 40px;
+        font-family: 'Mulish';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5em;
+        margin: 8px 0px 24px 0px;
+        padding: 8px 16px;
+    }
+}
+
+/* iPhone Pro 11 horizontal*/
+@media (max-width: 1194px), screen and (orientation: landscape) {
+
+    .contacto-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 0.5fr;
+        gap: 16px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "contacto-encabezado contacto-encabezado contacto-encabezado contacto-encabezado"
+            "area-contact-form area-contact-form area-contact-form area-contact-form"
+            "area-contact-form area-contact-form area-contact-form area-contact-form";
+        margin: 0;
+        padding: 16px 8%;
+    }
+
+    .contacto-encabezado {
+        grid-area: contacto-encabezado;
+        align-self: start;
+        justify-self: center;
+        padding: 2% 4%;
+        margin: 0;
+    }
+
+    .area-contact-form {
+        grid-area: area-contact-form;
+        align-self: start;
+        justify-self: center;
+        grid-template-rows: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contacto-main h1,
+    h2 {
+        font-size: 48px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .contacto-main h2 {
+        color: #FFFFFF;
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .contacto-main h5 {
+        color: #32F5F5;
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .contacto-main .p-intro {
+        color: #FFFFFF;
+        font-size: 24px;
+        line-height: 1.2em;
+        margin-bottom: 16px;
+    }
+
+    .contacto-form-contenedor {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #FFFFFF;
+        border-radius: 25px;
+        box-shadow: 0px 141px 200px -80px rgba(25, 58, 75, 0.30);
+        width: 72vw;
+        height: auto;
+        padding: 64px 64px;
+        gap: 32px;
+    }
+
+    .contacto-main form {
+        display: flex;
+        width: 72vw;
+        height: auto;
+        align-items: center;
+        align-self: center;
+        justify-content: space-evenly;
+        gap: 8px;
+        flex-shrink: 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    .contacto-main form fieldset {
+        border: none;
+        display: flex;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-block-start: 0em;
+        padding-inline-start: 0em;
+        padding-inline-end: 0em;
+        padding-block-end: 0em;
+        min-inline-size: min-content;
+        width: 72vw;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: center;
+    }
+
+    .contacto-main form label {
+        color: #695AC8;
+        font-family: 'Mulish';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2em;
+        margin: 8px 0px 6px 0px;
+        padding: 0;
+    }
+
+    .contacto-main form input[type=text] {
+        display: block;
+        border-radius: 15px;
+        border: 1px solid #E0E0E0;
+        background: #F7F8F8;
+        color: #695AC8;
+        width: 72vw;
+        height: 40px;
+        font-family: 'Mulish';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5em;
+        margin: 8px 0px 24px 0px;
+        padding: 8px 16px;
+    }
 }
