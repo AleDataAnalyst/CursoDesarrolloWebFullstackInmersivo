@@ -870,7 +870,7 @@ h2 {
 
 .contacto-main form {
     display: flex;
-    width: 100%;
+    width: 72vw;
     height: auto;
     align-items: center;
     align-self: center;
@@ -959,7 +959,7 @@ h2 {
     font-style: normal;
     font-weight: 500;
     line-height: 1.2em; /* 171.429% */
-    width: 92%;
+    width: 91%;
     height: auto;
     margin: 12px 0px;
     padding: 16px 24px;
