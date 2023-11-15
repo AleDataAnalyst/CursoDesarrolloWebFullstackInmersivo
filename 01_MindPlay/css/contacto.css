@@ -812,7 +812,6 @@ p {
 .contacto-main {
     display: grid;
     grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
-    grid-template-rows: 1fr 1fr 1fr;
     gap: 20px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -835,7 +834,7 @@ p {
     align-self: start;
     justify-self: center;
     grid-template-rows: auto; 
-    padding: 10%;
+    padding: 0;
     margin:0;
 }
 
@@ -848,43 +847,58 @@ h2 {
     color: #FFFFFF;
 }
 
+.contacto-main h5 {
+    color: #32F5F5;
+    font-size: 45px;
+    margin-bottom: 16px;
+}
+
 .contacto-form-contenedor {
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
     background-color: #FFFFFF;
     border-radius: 25px;
     box-shadow: 0px 141px 200px -80px rgba(25, 58, 75, 0.30);
-    width: 100%;
+    width: 72vw;
     height: auto;
-    padding: 60px 220px;
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 64px 64px;
     gap: 44px;
-    flex-shrink: 0;
 }
 
 .contacto-main form {
     display: flex;
     width: 100%;
     height: auto;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     align-self: center;
     justify-content: space-evenly;
     gap: 8px;
     flex-shrink: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
 }
 
-fieldset {
+.contacto-main form fieldset {
     border: none;
-    display: block;
-    margin-inline-start: 2px;
-    margin-inline-end: 2px;
-    padding-block-start: 0.35em;
-    padding-inline-start: 0.75em;
-    padding-inline-end: 0.75em;
-    padding-block-end: 0.625em;
+    display: flex;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-block-start: 0em;
+    padding-inline-start: 0em;
+    padding-inline-end: 0em;
+    padding-block-end: 0em;
     min-inline-size: min-content;
     width: 100%;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
 .contacto-main form label {
@@ -898,35 +912,31 @@ fieldset {
     padding: 0;
 }
 
-.contacto-main form input[type=label] {
-    align-self: center;
+/* .contacto-main form input {
+    display: block;
     border-radius: 15px;
     border: 1px solid #E0E0E0;
     background: #F7F8F8;
-    color: #695AC8;
-    letter-spacing: 0.14px;
-    width: 100%;
+    width: 88%;
     height: 40px;
-    /* margin: 32px 0px 8px 0px;
-    padding: 0; */
-    flex-shrink: 0;
-}
+} */
 
 .contacto-main form input[type=text] {
+    display: block;
     border-radius: 15px;
     border: 1px solid #E0E0E0;
     background: #F7F8F8;
     color: #695AC8;
+    width: 88%;
+    height: 40px;
     font-family: 'Mulish';
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.2em; /* 171.429% */
+    line-height: 1.5em;
     letter-spacing: 0.14px;
-    width: 100%;
-    height: 40px;
-    margin: 8px 0px 16px 0px;
-    padding: 16px 24px;
+    margin: 8px 0px 24px 0px;
+    padding: 8px 16px;
 }
 
 .contacto-main form input[type=checkbox], input[type=radio]  {
@@ -935,11 +945,12 @@ fieldset {
     background: #F7F8F8;
     width: 32px;
     height: 32px;
-    margin: 8px 0px;
+    margin: 8px 16px;
     padding: 8px 8px;
 }
 
 .contacto-main form select {
+    display: block;
     border-radius: 15px;
     border: 1px solid #E0E0E0;
     background: #F7F8F8;
@@ -949,7 +960,7 @@ fieldset {
     font-style: normal;
     font-weight: 500;
     line-height: 1.2em; /* 171.429% */
-    width: 100%;
+    width: 92%;
     height: auto;
     margin: 12px 0px;
     padding: 16px 24px;
@@ -969,6 +980,26 @@ fieldset {
     height: 40px;
     margin: 40px 0px;
     padding: 16px 24px;
+}
+
+.radio-probado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 24px;
+}
+
+.radio-yn {
+    display: flex;
+    padding: 0px;
+    margin: 0px 24px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .contacto-main form .btn-enviar {
@@ -995,35 +1026,9 @@ fieldset {
     color: #695AC8;
 }
 
-/* .contacto-main form input[type=button], input[type=submit], input[type=reset] {
-    align-self: center;
-    background-color: #695AC8;
-    border: none;
-    border-radius: 15px;
-    color: white;
-    cursor: pointer;
-    margin: 24px 16px;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    width: 60%;
-    transition: 0.3s;
-}
-
-.contacto-main form input:hover[type=button], input:hover[type=submit], input:hover[type=reset] {
-    background-color: #32F5F5;
-    color: #695AC8;
-}
-
-.contacto-main form input:focus[type=button], input:hover[type=submit], input:hover[type=reset] {
-    background-color: #12E3E3;
-    color: #695AC8;
-} */
-
 .contacto-main form textarea {
     display: block;
     overflow: auto;
-    align-self: center;
     border-radius: 15px;
     border: 1px solid #E0E0E0;
     background: #F7F8F8;
@@ -1032,13 +1037,12 @@ fieldset {
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.2em; /* 171.429% */
+    line-height: 1.2em;
     letter-spacing: 0.14px;
-    width: 100%;
+    width: 88%;
     min-height: 400px;
     margin: 24px 0px;
     padding: 16px 24px;
-    flex-shrink: 0;
 }
 
 .contacto-main form textarea:focus {
@@ -1047,6 +1051,17 @@ fieldset {
 
 .asterisco {
     color: #EB5757;
+    font-family: 'Mulish';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+}
+
+.alert-success {
+    display: block;
+    color: #32F5F5;
     font-family: 'Mulish';
     font-size: 14px;
     font-style: normal;
@@ -1076,14 +1091,19 @@ fieldset {
     justify-content: space-evenly;
 }
 
-.datos > p {
+.datos p {
     color: #695AC8;
     font-family: 'Mulish';
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 153.846% */
-    letter-spacing: 0.26px;
+    line-height: 20px;
 }
 
-/* Form externa */
+.datos .p-tel::before {
+    content: url(img/ic-tel.svg);
+}
+
+.datos .p-email::before {
+    content: url(img/ic-email.svg);
+}
