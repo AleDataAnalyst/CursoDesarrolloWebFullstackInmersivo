@@ -6,7 +6,7 @@
 
 body {
     background-color: #695AC8;
-    margin: 0px auto;
+    margin: 0px 0;
     padding: 0px;
 }
 
@@ -235,7 +235,7 @@ p {
     font-size: 24px;
 }
 
-p-morado {
+.p-morado {
     color: #695AC8;
     font-family: 'Mulish', sans-serif;
     font-size: 24px;
@@ -342,26 +342,37 @@ footer p {
 /* Fin Estilos Generales */
 
 /* Página Indicaciones */
-.main-indicaciones {
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
-    gap: 24px 24px; 
-    grid-template-areas: 
-      "indicaciones-intro-img indicaciones-intro-txt indicaciones-intro-txt indicaciones-intro-txt"
+#main-indicaciones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+    gap: 24px;
+    grid-template-areas:
+    "indicaciones-intro indicaciones-intro indicaciones-intro indicaciones-intro"
+      /* "indicaciones-intro-img indicaciones-intro-txt indicaciones-intro-txt indicaciones-intro-txt" */
       "indicaciones-carrusel-headsets-titulo indicaciones-carrusel-headsets-titulo indicaciones-carrusel-headsets-titulo indicaciones-carrusel-headsets-titulo"
       "indicaciones-carrusel-headsets indicaciones-carrusel-headsets indicaciones-carrusel-headsets indicaciones-carrusel-headsets"
       "indicaciones-carrusel-inmersion-titulo indicaciones-carrusel-inmersion-titulo indicaciones-carrusel-inmersion-titulo indicaciones-carrusel-inmersion-titulo"
       "indicaciones-carrusel-inmersion indicaciones-carrusel-inmersion indicaciones-carrusel-inmersion indicaciones-carrusel-inmersion"
-      "indicaciones-col-izq-txt indicaciones-col-izq-txt indicaciones-col-der-img indicaciones-col-der-img"; 
+      "indicaciones-col-izq-txt indicaciones-col-izq-txt indicaciones-col-der-img indicaciones-col-der-img";
+    padding: 2% 2%;
+    margin: 0;
 }
-  
-.indicaciones-intro-img {
-    grid-area: indicaciones-intro-img;
-    justify-self: end; 
+
+.indicaciones-intro {
+    grid-area: indicaciones-intro; 
+    justify-self: center; 
     align-self: center;
-    min-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 32px;
+}
+
+.indicaciones-intro-img {
+    order: 1;
     margin: 0px;
     padding: 0px;
 }
@@ -373,20 +384,26 @@ footer p {
 
 .indicaciones-intro-txt {
     grid-area: indicaciones-intro-txt;
-    justify-self: start; 
+    justify-self: start;
     align-self: start;
-    min-height: fit-content;
+    /* min-height: fit-content; */
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
     margin: 0px;
     padding: 0px;
 }
 
-.indicaciones-intro-100titulos {
-    grid-area: indicaciones-intro-100titulos; 
+/* .indicaciones-intro-100titulos { 
     justify-self: stretch; 
     align-self: center; 
-}
+} */
 
-/* .calltoaction-catalogo {
+.calltoaction-catalogo {
     background: linear-gradient(90deg, rgba(50,245,245,0) 15%, rgba(50,245,245,1) 65%, rgba(50,245,245,0) 100%);
     display: flex;
     flex-direction: row;
@@ -397,7 +414,7 @@ footer p {
     justify-content: space-evenly;
     padding-top: 20px;
     padding-bottom: 20px;
-} */
+}
 
 /* .img-abajo {
     min-width: 200px;
@@ -405,7 +422,7 @@ footer p {
 } */
 
 /* Carrusel headsets título */
-/* .indicaciones-carrusel-headsets-titulo {
+.indicaciones-carrusel-headsets-titulo {
     justify-self: center; 
     align-self: center; 
     grid-area: indicaciones-carrusel-headsets-titulo; 
@@ -417,13 +434,6 @@ footer p {
     font-style: normal;
     line-height: 1.5em;
     text-align: center;
-} */
-
-/* Carrusel headsets */
-/* .indicaciones-carrusel-headsets {
-    justify-self: stretch; 
-    align-self: center; 
-    grid-area: indicaciones-carrusel-headsets; 
 }
 
 .indicaciones-carrusel-headsets .p-seleccion {

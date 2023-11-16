@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/contacto.css">
+    <link rel="stylesheet" type="text/css" href="css/indicaciones.css">
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
     <title>MindPlay</title>
 </head>
@@ -29,25 +29,28 @@
     </header>
 
 <!-- Main Indicaciones -->
-    <div class="main-indicaciones">
+    <div id="main-indicaciones">
 
         <!-- Bloque Intro Img -->
-        <div class="indicaciones-intro-img">
-            <img class="intro-img" src="img/indicaciones-img-headseat.png" alt="Cascos de realidad virtual">
-        </div>
-
-        <!-- Bloque Intro Txt -->
-        <div class="indicaciones-intro-txt">
-            <h1>Indicaciones</h1>
-            <p class="white-txt p-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
-            
-            <div class="calltoaction-catalogo">
-                <h5>Catálogo</h5>
-                <p class="highlight white-txt">Más de 100 títulos</p>
+        <section class="indicaciones-intro">
+            <div class="indicaciones-intro-img">
+                <img class="intro-img" src="img/indicaciones-img-headseat.png" alt="Cascos de realidad virtual">
             </div>
-        </div>
+    
+            <!-- Bloque Intro Txt -->
+            <div class="indicaciones-intro-txt">
+                <h1>Indicaciones</h1>
+                <p class="white-txt p-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                
+                <div class="calltoaction-catalogo">
+                    <h5>Catálogo</h5>
+                    <p class="highlight white-txt">Más de 100 títulos</p>
+                </div>
+            </div>
+        </section>
+        
 
         <!-- Carrusel Headsets Título -->
         <section class="indicaciones-carrusel-headsets-titulo">
@@ -113,7 +116,6 @@
         <div class="indicaciones-col-der-img">
             <img class="img-abajo" src="img/img-casco-abajo.png" alt="">
         </div>
-
     </div> <!-- Fin Main -->
 
     <!-- Footer -->
@@ -155,6 +157,7 @@
         <p>Desarrollado en el Curso de Desarrollo Web Fullstack + Tecnologías Inmersivas de Fundación Tomillo y Factoría
             F5</p>
     </footer>
+</body>
 
     <!-- Librería slick -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
@@ -198,7 +201,5 @@
             });
         });
     </script> -->
-
-</body>
 
 </html>
