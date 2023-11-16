@@ -380,25 +380,6 @@ footer p {
 }
 
 /* Página Indicaciones */
-/* .main-indicaciones {
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-top: 2%;
-    margin-bottom: 0px;
-    padding: 0px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: auto auto; */
-    /* grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        'indicaciones-intro-img indicaciones-intro-txt indicaciones-intro-txt indicaciones-intro-txt'
-        'indicaciones-carrusel-headsets indicaciones-carrusel-headsets indicaciones-carrusel-headsets indicaciones-carrusel-headsets'
-        'indicaciones-carrusel-inmersion indicaciones-carrusel-inmersion indicaciones-carrusel-inmersion indicaciones-carrusel-inmersion'
-        'indicaciones-col-izq-txt indicaciones-col-izq-txt indicaciones-col-der-img indicaciones-col-der-img';
-    grid-column-gap: 16px;
-    grid-row-gap: 54px; */
-/* } */
-
 .main-indicaciones {
     display: grid; 
     grid-auto-columns: 1fr; 
@@ -546,7 +527,7 @@ footer p {
 }
 
 
-/* Textos abajo */
+/* Columnas abajo: textos (izq) e imagen (der)  */
 .indicaciones-coltxtizq {
     grid-area: indicaciones-col-izq-txt;
 }
@@ -567,7 +548,7 @@ footer p {
 } 
 
 .indicaciones-coltxtder {
-    grid-area:indicaciones-col-der-img;
+    grid-area: indicaciones-col-der-img;
 }
 
 /* Media Queries */
