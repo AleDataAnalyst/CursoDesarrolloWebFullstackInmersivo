@@ -11,7 +11,7 @@ body {
 }
 
 @font-face {
-    font-family: 'Mulish';
+    font-family: 'Mulish', sans-serif;
     src: url(./fonts/Mulish/Mulish-Regular.otf) format(opentype);
     font-weight: 200 1000;
 }
@@ -231,13 +231,13 @@ h5 {
 
 p {
     color: #FFFFFF;
-    font-family: 'Mulish';
+    font-family: 'Mulish', sans-serif;
     font-size: 24px;
 }
 
 p-morado {
     color: #695AC8;
-    font-family: 'Mulish';
+    font-family: 'Mulish', sans-serif;
     font-size: 24px;
 }
 
@@ -903,7 +903,7 @@ h2 {
 
 .contacto-main form label {
     color: #695AC8;
-    font-family: 'Mulish';
+    font-family: 'Mulish', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -920,7 +920,7 @@ h2 {
     color: #695AC8;
     width: 88%;
     height: 40px;
-    font-family: 'Mulish';
+    font-family: 'Mulish', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -947,7 +947,7 @@ input[type=radio] {
     border: 1px solid #E0E0E0;
     background: #F7F8F8;
     color: #695AC8;
-    font-family: 'Mulish';
+    font-family: 'Mulish', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -963,7 +963,7 @@ input[type=radio] {
     border: 1px solid #E0E0E0;
     background: #F7F8F8;
     color: #695AC8;
-    font-family: 'Mulish';
+    font-family: 'Mulish', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -1026,7 +1026,7 @@ input[type=radio] {
     border: 1px solid #E0E0E0;
     background: #F7F8F8;
     color: #695AC8;
-    font-family: 'Mulish';
+    font-family: 'Mulish', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -1044,7 +1044,7 @@ input[type=radio] {
 
 .asterisco {
     color: #EB5757;
-    font-family: 'Mulish';
+    font-family: 'Mulish', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1069,7 +1069,7 @@ input[type=radio] {
 .alert-success {
     display: block;
     color: #32F5F5;
-    font-family: 'Mulish';
+    font-family: 'Mulish', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1099,7 +1099,7 @@ input[type=radio] {
 
 .datos p {
     color: #695AC8;
-    font-family: 'Mulish';
+    font-family: 'Mulish', sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -1158,7 +1158,7 @@ input[type=radio] {
 
     .contacto-main form label {
         color: #695AC8;
-        font-family: 'Mulish';
+        font-family: 'Mulish', sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
