@@ -12,7 +12,7 @@ body {
 
 @font-face {
     font-family: 'Mulish';
-    src: url(./fonts/Mulish/Mulish-Regular.otf) format(opentype);
+    src: url(../fonts/Mulish/Mulish-Regular.otf) format(opentype);
     font-weight: 200 1000;
 }
 
@@ -154,6 +154,7 @@ button {
     background-color: transparent;
     border: 3px solid #FFFFFF;
     border-radius: 15px;
+    color: #FFFFFF;
     outline: none;
     padding: 5%;
     transition: all .5s ease;
@@ -453,7 +454,7 @@ footer p {
     margin: 0;
 }
 
-.indicaciones-carrusel-headsets .carrusel-headsets, .indicaciones-carrusel-inmersion .carrusel-inmersion {
+.indiciones-carrusel-headsets .carrusel-headsets, .indicaciones-carrusel-inmersion .carrusel-inmersion {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -536,7 +537,7 @@ footer p {
 
 .jugadoresprecio::before { 
     content: ''; 
-    background: url('jugadoresprecio.png') no-repeat center center/cover; 
+    background: url('../img/jugadoresprecio.svg') no-repeat center center/cover; 
     position: absolute;
     top: 0px; 
     left: 0px; 
