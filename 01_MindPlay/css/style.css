@@ -256,6 +256,7 @@ p {
 /* footer */
 footer {
     background-color: #695AC8;
+    clear: both;
     margin-top: 24px;
     display: flex;
     flex-direction: column;
@@ -570,21 +571,24 @@ p {
 }
 
 .left-form {
-
+    display: inline-block;
     overflow: hidden;
     float: left;
     background-size: cover;
+    margin: 0;
+    width: 48%;
 }
 
 .right-form {
-    width: 50%;
+    display: inline-block;
+    width: 48%;
     height: 100%;
-    margin: 0px;
     float: left;
     background-color: white;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin: 0;
+    padding: 2%;
 }
 
 .right-form form {
