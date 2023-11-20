@@ -6,13 +6,13 @@
 
 body {
     background-color: #695AC8;
-    margin: 0px auto;
+    margin: 0px 0;
     padding: 0px;
 }
 
 @font-face {
-    font-family: 'Mulish', sans-serif;
-    src: url(./fonts/Mulish/Mulish-Regular.otf) format(opentype);
+    font-family: 'Mulish';
+    src: url(../fonts/Mulish/Mulish-Regular.otf) format(opentype);
     font-weight: 200 1000;
 }
 
@@ -154,6 +154,7 @@ button {
     background-color: transparent;
     border: 3px solid #FFFFFF;
     border-radius: 15px;
+    color: #FFFFFF;
     outline: none;
     padding: 5%;
     transition: all .5s ease;
@@ -196,7 +197,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Atkinson Hyperlegible';
+    font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: 700;
 }
 
@@ -235,7 +236,7 @@ p {
     font-size: 24px;
 }
 
-p-morado {
+.p-morado {
     color: #695AC8;
     font-family: 'Mulish', sans-serif;
     font-size: 24px;
@@ -338,6 +339,8 @@ footer p {
     font-size: 12px;
     text-align: left;
 }
+/* Fin Footer */
+/* Fin Estilos Generales */
 
 /* -- Index -- */
 /* ----------  Portada  ------------   */
