@@ -253,6 +253,21 @@ p {
     font-size: 30px;
 }
 
+.jugadoresprecio {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.jugadoresprecio::before { 
+    content: ''; 
+    background: url('../img/jugadoresprecio.svg') no-repeat center center/cover; 
+    position: absolute;
+    top: 0px; 
+    left: 0px; 
+    width: 38px; 
+    height: auto;
+} 
+
 /* footer */
 footer {
     background-color: #695AC8;
@@ -529,21 +544,6 @@ footer p {
     justify-self: start; 
     align-self: start; 
 }
-
-.jugadoresprecio {
-    color: #FFFFFF;
-    font-size: 24px;
-}
-
-.jugadoresprecio::before { 
-    content: ''; 
-    background: url('../img/jugadoresprecio.svg') no-repeat center center/cover; 
-    position: absolute;
-    top: 0px; 
-    left: 0px; 
-    width: 38px; 
-    height: auto;
-} 
 
 .indicaciones-col-der-img {
     grid-area: indicaciones-col-der-img;
