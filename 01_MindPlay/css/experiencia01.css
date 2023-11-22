@@ -383,6 +383,7 @@ footer p {
     font-size: 12px;
     text-align: left;
 }
+
 /* Fin Footer */
 /* Fin Estilos Generales */
 
@@ -499,7 +500,7 @@ footer p {
     border-radius: 10px;
     display: flex;
     position: relative;
-    padding: 50px;
+    padding: 37px;
     margin-right: 50px;
     padding-left: 9%;
     flex-direction: column;
@@ -542,17 +543,16 @@ footer p {
 
 /* Media Queries */
 /* iPhone Pro 11 vertical */
-@media (max-width: 834px), screen and (orientation: portrait) {
+@media (max-width: 834px),
+screen and (orientation: portrait) {
 
     #main-experiencias {
-        margin:0;
+        margin: 0;
         padding: 2%;
         display: grid;
         grid-template-columns: 1fr;
-        /* grid-template-columns: 1fr 1fr 1fr; */
         gap: 16px 0px;
         grid-auto-flow: column;
-        /* grid-template-rows: 1fr 1fr 1fr; */
         grid-template-rows: auto auto;
         grid-column-gap: 32px;
         grid-row-gap: 40px;
@@ -561,13 +561,13 @@ footer p {
             "exp-colizqimg"
             "exp-coldertxt"
     }
-    
-    .encabezado-internas {
+
+    /*.encabezado-internas {
         grid-area: encabezado-internas;
         align-self: center;
         justify-self: start;
     }
-    
+
     .encabezado-internas .p-intro {
         color: #FFFFFF;
         font-family: 'Mulish';
@@ -578,7 +578,7 @@ footer p {
         padding-bottom: 20px;
         margin-bottom: 10px;
     }
-    
+
     .botones-exp {
         display: flex;
         align-content: center;
@@ -586,8 +586,8 @@ footer p {
         gap: 32px;
         margin: 2%;
         padding: 2%;
-    }
-    
+    }*/
+
     .exp-colizqimg {
         display: flex;
         grid-area: exp-colizqimg;
@@ -603,7 +603,7 @@ footer p {
     .exp-colizqimg .img-exp {
         max-width: 85%;
     }
-    
+
     /* Textos col der */
     .exp-coldertxt {
         grid-area: exp-coldertxt;
@@ -612,21 +612,21 @@ footer p {
         margin: 0px;
         padding: 0px;
     }
-    
+
     .exp-coldertxt p {
         color: #FFFFFF;
         font-family: 'Mulish';
         font-size: 24px;
         line-height: 1.6em;
     }
-    
+
     .jugadoresprecio {
         color: #FFFFFF;
         font-family: 'Mulish';
         font-size: 24px;
         line-height: 1.6em;
     }
-    
+
     .jugadoresprecio::before {
         content: 'img/jugadoresprecio.png';
         background: url('img/jugadoresprecio.png') no-repeat center center/cover;
@@ -636,9 +636,9 @@ footer p {
         width: 38px;
         height: auto;
     }
-    
+
     /* Carrusel flechas */
-    
+
     .carrusel-fondoimgtxt {
         border-top: 3px solid #FFF;
         background: linear-gradient(180deg, rgba(50, 245, 245, 0.00) 2.6%, rgba(50, 245, 245, 0.60) 100%);
@@ -651,7 +651,7 @@ footer p {
         flex-wrap: nowrap;
         align-content: center;
     }
-    
+
     .carrusel-experiencia {
         display: flex;
         position: relative;
@@ -660,7 +660,7 @@ footer p {
         width: 1072px;
         padding: 10%;
     }
-    
+
     .carrusel-exp-testimonio {
         background-color: #FFFFFF;
         border-radius: 10px;
@@ -671,23 +671,25 @@ footer p {
         padding-left: 9%;
         flex-direction: column;
     }
-    
+
     .carrusel-exp-testimonio p {
         color: #695AC8;
         font-family: 'Atkinson Hyperlegible';
         font-size: 22px;
         line-height: 1.5em;
     }
-    
+
     .carrusel-exp-img {
         margin-bottom: -50px;
+        margin-right: 37px;
         position: relative;
         z-index: 1;
     }
-    
+
     .carrusel-exp-img2 {
         display: flex;
         margin-bottom: -50px;
+        margin-right: 37px;
         position: relative;
         z-index: 1;
         height: 300px;
@@ -695,10 +697,11 @@ footer p {
         border: 13px solid #32F5F5;
         border-radius: 50%;
     }
-    
+
     .carrusel-exp-img3 {
         display: flex;
         margin-bottom: -50px;
+        margin-right: 35px;
         position: relative;
         z-index: 1;
         height: 300px;
@@ -707,11 +710,27 @@ footer p {
         border-radius: 50%;
     }
 
+    .slick-prev,
+    .slick-next {
+        opacity: 0;
+    }
+
+    .slick-dots li button:before {
+
+        font-size: 15px;
+        content: '•';
+        text-align: center;
+        color: #32F5F5;
+
+    }
+
+    .slick-dots li.slick-active button:before {
+        opacity: .75;
+        color: #32F5F5;
+    }
 }
+
 
 /* iPhone Pro 11 horizontal*/
-@media (max-width: 1194px), screen and (orientation: landscape) {
-
-
-}
-
+@media (max-width: 1194px),
+screen and (orientation: landscape) {}
