@@ -558,12 +558,110 @@ footer p {
 }
 
 /* Media Queries */
-/* iPhone Pro 11 vertical */
-/* @media (max-width: 834px), screen and (orientation: portrait) {
 
-} */
+/* iPhone Pro 11 vertical */
+@media (min-width: 400px) and (max-width: 834px),
+screen and (orientation: portrait) {
+
+    #main-indicaciones {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "indicaciones-intro"
+            "indicaciones-carrusel-headsets-titulo"
+            "indicaciones-carrusel-headsets"
+            "indicaciones-carrusel-inmersion-titulo"
+            "indicaciones-carrusel-inmersion"
+            "indicaciones-col-izq-txt"
+            "indicaciones-col-der-img";
+    }
+
+    .indicaciones-intro-img {
+        align-self: center;
+        justify-self: center;
+        order: 1;
+    }
+
+    .indicaciones-col-der-img,
+    .indicaciones-col-izq-txt {
+        align-self: center;
+        justify-self: center;
+        order: 2;
+    }
+
+    .img-abajo {
+        min-width: 200px;
+        max-width: 400px;
+    }
+
+    .footer-contenedormenus {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .footerleft {
+        margin-right: 0;
+        padding-right: 0;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .menufooter,
+    .menufooter-empresa {
+        margin-bottom: 16px;
+    }
+
+    .footerright {
+        align-items: center;
+    }
+
+}
 
 /* iPhone Pro 11 horizontal*/
-/* @media (max-width: 1194px), screen and (orientation: landscape) {
+@media (min-width: 835px) and (max-width: 1194px),
+screen and (orientation: landscape) {
 
-} */
+    #main-indicaciones {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "indicaciones-intro indicaciones-intro"
+            "indicaciones-carrusel-headsets-titulo indicaciones-carrusel-headsets-titulo"
+            "indicaciones-carrusel-headsets indicaciones-carrusel-headsets"
+            "indicaciones-carrusel-inmersion-titulo indicaciones-carrusel-inmersion-titulo"
+            "indicaciones-carrusel-inmersion indicaciones-carrusel-inmersion"
+            "indicaciones-col-izq-txt indicaciones-col-der-img";
+    }
+
+    .indicaciones-intro-img {
+        align-self: center;
+        justify-self: center;
+        order: 1;
+    }
+
+    .indicaciones-col-der-img,
+    .indicaciones-col-izq-txt {
+        align-self: center;
+        justify-self: center;
+        order: 2;
+    }
+
+    .footer-contenedormenus {
+        flex-direction: row;
+    }
+
+    .footerleft {
+        gap: 32px;
+        margin-right: 5%;
+        padding-right: 5%;
+        justify-content: flex-start;
+    }
+
+    .menufooter,
+    .menufooter-empresa {
+        margin-bottom: 0;
+    }
+
+    .footerright {
+        align-items: stretch;
+    }
+
+}

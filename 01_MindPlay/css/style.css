@@ -946,3 +946,58 @@ p {
     line-height: 1.5em;
     
 }
+
+/* Media Queries */
+
+/* iPhone Pro 11 vertical */
+@media (min-width: 400px) and (max-width: 834px),
+screen and (orientation: portrait) {
+
+    .footer-contenedormenus {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .footerleft {
+        margin-right: 0;
+        padding-right: 0;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .menufooter,
+    .menufooter-empresa {
+        margin-bottom: 16px;
+    }
+
+    .footerright {
+        align-items: center;
+    }
+
+}
+
+/* iPhone Pro 11 horizontal*/
+@media (min-width: 835px) and (max-width: 1194px),
+screen and (orientation: landscape) {
+
+    .footer-contenedormenus {
+        flex-direction: row;
+    }
+
+    .footerleft {
+        gap: 32px;
+        margin-right: 5%;
+        padding-right: 5%;
+        justify-content: flex-start;
+    }
+
+    .menufooter,
+    .menufooter-empresa {
+        margin-bottom: 0;
+    }
+
+    .footerright {
+        align-items: stretch;
+    }
+
+}
