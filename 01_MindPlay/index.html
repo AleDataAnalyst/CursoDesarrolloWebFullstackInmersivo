@@ -26,8 +26,6 @@
                     sesión</button>
                 <button class="btn-registrarse btn-s" onclick="location.href='registro.html'"
                     type="button">Registrarse</button>
-                <!-- <button><a href="login.html" class="btn-iniciar-sesion btn-s">Iniciar sesión</a></button>
-                <button><a href="registro.html" class="btn-registrarse btn-s">Registrarse</a></button> -->
             </div>
         </nav>
     </header>
@@ -52,17 +50,18 @@
                 <h2 class="subfilter">Descubre más <br>experiencias Inmersivas</h2>
                 <div>
                     <ul class="filter">
-                        <li class="filter__item">Todas</li>
-                        <li class="filter__item">Cultura</li>
-                        <li class="filter__item">Deportes</li>
-                        <li class="filter__item">Temporada</li>
-                        <li class="filter__item">Terapéuticas</li>
-                        <li class="filter__item">Viajes</li>
+                        <li class="filter__item" data-category="Todas">Todas</li>
+                        <li class="filter__item" data-category="Cultura">Cultura</li>
+                        <li class="filter__item" data-category="Deportes">Deportes</li>
+                        <li class="filter__item" data-category="Temporada">Temporada</li>
+                        <li class="filter__item" data-category="Terapéuticas">Terapéuticas</li>
+                        <li class="filter__item" data-category="Viajes">Viajes</li>
                     </ul>
                 </div>
 
                 <div class="allimages">
-                    <div class="cont-image">
+                    <!-- Tarjetas preexistentes -->
+                    <div class="cont-image" data-category="Deportes">
                         <img src="img/corazon.png" alt="corazon" class="corazon">
                         <img src="img/concierto.png" alt="concierto">
                         <hr>
@@ -74,7 +73,7 @@
                         </div>
                     </div>
 
-                    <div class="cont-image">
+                    <div class="cont-image" data-category="Cultura">
                         <img src="img/corazon.png" alt="corazon" class="corazon">
                         <img src="img/pintura.png" alt="pintura">
                         <hr>
@@ -86,7 +85,7 @@
                         </div>
                     </div>
 
-                    <div class="cont-image">
+                    <div class="cont-image" data-category="Terapéuticas">
                         <img src="img/corazon.png" alt="corazon" class="corazon">
                         <img src="img/terapeutica1.jpg" alt="explorar">
                         <hr>
@@ -98,77 +97,57 @@
                         </div>
                     </div>
 
-                    <div class="cont-image">
+                    <!-- Nuevas tarjetas para los tipos restantes -->
+                    <div class="cont-image" data-category="Temporada">
                         <img src="img/corazon.png" alt="corazon" class="corazon">
-                        <img src="img/film.png" alt="explorar">
+                        <img src="img/temporada.jpeg" alt="temporada">
                         <hr>
-                        <p class="titleimage">Welcome to the Jungle</p>
-                        <p class="subtitle">Producción propia</p>
+                        <p class="titleimage">Celebración de Temporada</p>
+                        <p class="subtitle">Temporada</p>
                         <div class="contenttimeprice">
                             <p>Duración: <em>02h : 00m : 00s</em></p>
                             <p>Precio: <em>10 €</em></p>
                         </div>
                     </div>
 
-                    <div class="cont-image">
+                    <div class="cont-image" data-category="Viajes">
                         <img src="img/corazon.png" alt="corazon" class="corazon">
-                        <img src="img/pintura.png" alt="pintura">
+                        <img src="img/viaje.jpg" alt="viaje">
                         <hr>
-                        <p class="titleimage">Pinturas del el Bosco</p>
-                        <p class="subtitle">Coproducción con el Museo de El Prado</p>
+                        <p class="titleimage">Aventura de Viaje</p>
+                        <p class="subtitle">Viajes</p>
                         <div class="contenttimeprice">
                             <p>Duración: <em>02h : 00m : 00s</em></p>
                             <p>Precio: <em>10 €</em></p>
                         </div>
                     </div>
 
-                    <div class="cont-image">
+                    <div class="cont-image" data-category="Temporada">
                         <img src="img/corazon.png" alt="corazon" class="corazon">
-                        <img src="img/terapeutica2.jpg" alt="explorar">
+                        <img src="img/fiesta.jpg" alt="fiesta">
                         <hr>
-                        <p class="titleimage">Historias de Exploradores</p>
-                        <p class="subtitle">Coproducción con el Museo de Historia</p>
+                        <p class="titleimage">Fiesta de Temporada</p>
+                        <p class="subtitle">Temporada</p>
                         <div class="contenttimeprice">
                             <p>Duración: <em>02h : 00m : 00s</em></p>
                             <p>Precio: <em>10 €</em></p>
                         </div>
                     </div>
 
-                    <div class="cont-image">
+                    <div class="cont-image" data-category="Temporada">
                         <img src="img/corazon.png" alt="corazon" class="corazon">
-                        <img src="img/film.png" alt="explorar">
+                        <img src="img/otra_temporada.jpg" alt="otra_temporada">
                         <hr>
-                        <p class="titleimage">Welcome to the Jungle</p>
-                        <p class="subtitle">Producción propia</p>
+                        <p class="titleimage">Otra Experiencia de Temporada</p>
+                        <p class="subtitle">Temporada</p>
                         <div class="contenttimeprice">
                             <p>Duración: <em>02h : 00m : 00s</em></p>
                             <p>Precio: <em>10 €</em></p>
                         </div>
                     </div>
 
-                    <div class="cont-image">
-                        <img src="img/corazon.png" alt="corazon" class="corazon">
-                        <img src="img/terapeutica3.jpg" alt="concierto">
-                        <hr>
-                        <p class="titleimage">Welcome to the Jungle</p>
-                        <p class="subtitle">Producción propia</p>
-                        <div class="contenttimeprice">
-                            <p>Duración: <em>02h : 00m : 00s</em></p>
-                            <p>Precio: <em>10 €</em></p>
-                        </div>
-                    </div>
+                    <!-- Puedes agregar más tarjetas según sea necesario -->
 
-                    <div class="cont-image">
-                        <img src="img/corazon.png" alt="corazon" class="corazon">
-                        <img src="img/concierto.png" alt="concierto">
-                        <hr>
-                        <p class="titleimage">Welcome to the Jungle</p>
-                        <p class="subtitle">Producción propia</p>
-                        <div class="contenttimeprice">
-                            <p>Duración: <em>02h : 00m : 00s</em></p>
-                            <p>Precio: <em>10 €</em></p>
-                        </div>
-                    </div>
                     <div>
                         <span class="cargar"><a href="#">Cargar más</a></span>
                     </div>
@@ -238,13 +217,38 @@
                     <a href="https://instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
                 </div>
 
-                <button class="btn-idioma"><img src="img/ic-idiomamundo.svg" alt="Seleccionar idioma"><p>Español</p><img src="img/chevron-down.svg" alt="seleccionar idioma"></button>
+                <button class="btn-idioma"><img src="img/ic-idiomamundo.svg" alt="Seleccionar idioma">
+                    <p>Español</p><img src="img/chevron-down.svg" alt="seleccionar idioma">
+                </button>
             </div>
         </div>
 
         <p>Desarrollado en el Curso de Desarrollo Web Fullstack + Tecnologías Inmersivas de Fundación Tomillo y Factoría
             F5</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterItems = document.querySelectorAll('.filter__item');
+            const cards = document.querySelectorAll('.cont-image');
+
+            filterItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    const category = this.getAttribute('data-category');
+
+                    cards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-category');
+
+                        if (category === 'Todas' || category === cardCategory) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 
 </body>
 
