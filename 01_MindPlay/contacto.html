@@ -41,7 +41,7 @@
         </div>
         <div class="area-contact-form">
             <div class="contacto-form-contenedor">
-                <form class="contacto-form" action=" " method="post" id="contact_form">
+                <form class="contacto-form" action=" " method="post" id="contact_form" novalidate>
                     <fieldset>
 
                         <!-- Form Name -->
@@ -85,9 +85,9 @@
                         </select>
 
                         <!-- Text input-->
-                        <label>Código postal</label>
-                        <input name="codigopostal" placeholder="Código postal" type="number" required minlength="5"
-                            maxlength="5">
+                        <Label>Código postal <span class="asterisco">*</span>:</Label>
+                        <input name="codigopostal" pattern="[0-9]{5}" title="Five digit zip code" placeholder="Introduce los 5 dígitos de tu código postal" type="text"
+                            required minlength="5" maxlength="5">
 
                         <!-- Text input-->
                         <label>Sitio web <span class="asterisco">*</span>:</label>

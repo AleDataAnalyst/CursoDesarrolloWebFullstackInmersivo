@@ -826,7 +826,7 @@ p {
 
 .contacto-encabezado {
     grid-area: contacto-encabezado;
-    align-self: start;
+    align-self: center;
     justify-self: center;
     padding: 4% 16%;
     margin: 0;
@@ -907,7 +907,7 @@ h2 {
 .contacto-main form label {
     color: #695AC8;
     font-family: 'Mulish', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.2em;
@@ -915,16 +915,26 @@ h2 {
     padding: 0;
 }
 
-.contacto-main form input[type=text] {
+/* Style for all inputs, including default and placeholder states */
+.contacto-main form input[type=text],
+.contacto-main form input[type=email],
+.contacto-main form input[type=tel],
+.contacto-main form input[type=url],
+.contacto-main form input[type=number],
+.contacto-main form textarea,
+.contacto-main form select,
+.contacto-main form option {
     display: block;
     border-radius: 15px;
     border: 1px solid #E0E0E0;
-    background: #F7F8F8;
+    background: #f3f1ff;
     color: #695AC8;
-    width: 88%;
-    height: 40px;
+    outline: none;
+    width: 98%;
+    height: 48px;
+    min-height: fit-content;
     font-family: 'Mulish', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5em;
@@ -933,48 +943,96 @@ h2 {
     padding: 8px 16px;
 }
 
+/* Styles for focus and active states */
+.contacto-main form input[type=text]:focus,
+.contacto-main form input[type=email]:focus,
+.contacto-main form input[type=tel]:focus,
+.contacto-main form input[type=url]:focus,
+.contacto-main form input[type=number]:focus,
+.contacto-main form input[type=text]:active,
+.contacto-main form input[type=email]:active,
+.contacto-main form input[type=tel]:active,
+.contacto-main form input[type=url]:active,
+.contacto-main form input[type=number]:active {
+    outline: none;
+    border: 2px solid #695AC8;
+    box-shadow: 0 0 5px rgba(105, 90, 200, 0.5);
+}
+
+/* Styles for invalid state */
+.contacto-main form input[type=text]:invalid,
+.contacto-main form input[type=email]:invalid,
+.contacto-main form input[type=tel]:invalid,
+.contacto-main form input[type=url]:invalid,
+.contacto-main form input[type=number]:invalid,
+.contacto-main form textarea:invalid,
+.contacto-main form input[type=text]:focus:invalid,
+.contacto-main form input[type=email]:focus:invalid,
+.contacto-main form input[type=tel]:focus:invalid,
+.contacto-main form input[type=url]:focus:invalid,
+.contacto-main form input[type=number]:focus:invalid,
+.contacto-main form textarea:focus:invalid,
+.contacto-main form input[type=text]:not(:focus):invalid,
+.contacto-main form input[type=email]:not(:focus):invalid,
+.contacto-main form input[type=tel]:not(:focus):invalid,
+.contacto-main form input[type=url]:not(:focus):invalid,
+.contacto-main form input[type=number]:not(:focus):invalid,
+.contacto-main form textarea:not(:focus):invalid {
+    border: 2px solid #FF5252;
+    box-shadow: 0 0 5px rgba(255, 82, 82, 0.5);
+}
+
+/*Placeholder de input */
+.contacto-main form input[type=text]::placeholder,
+.contacto-main form input[type=email]::placeholder,
+.contacto-main form input[type=tel]::placeholder,
+.contacto-main form input[type=url]::placeholder,
+.contacto-main form input[type=number]::placeholder,
+.contacto-main form textarea::placeholder {
+    font-size: 22px;
+    color: #695AC8; 
+}
+
+/* Estilo para estado por defecto (override los estilos específicos de browsers) */
+.contacto-main form input[type=text]:not(:focus):not(:placeholder-shown),
+.contacto-main form input[type=email]:not(:focus):not(:placeholder-shown),
+.contacto-main form input[type=tel]:not(:focus):not(:placeholder-shown),
+.contacto-main form input[type=url]:not(:focus):not(:placeholder-shown),
+.contacto-main form input[type=number]:not(:focus):not(:placeholder-shown),
+.contacto-main form textarea:not(:focus):not(:placeholder-shown),
+.contacto-main form select:not(:focus):not(:placeholder-shown) {
+    border-color: #E0E0E0; /* Establecer color de borde */
+    outline: none;
+}
+
 .contacto-main form input[type=checkbox],
-input[type=radio] {
+.contacto-main form input[type=radio] {
     border-radius: 15px;
     border: 1px solid #E0E0E0;
-    background: #F7F8F8;
+    background: #f3f1ff;
     width: 32px;
     height: 32px;
     margin: 8px 16px;
     padding: 8px 8px;
+    outline: none;
+}
+
+/* Estilos para checkboxes y radio buttons cuando se seleccionan */
+.contacto-main form input[type=checkbox]:checked,
+.contacto-main form input[type=radio]:checked {
+    background-color: #695AC8;
+    outline: none;
 }
 
 .contacto-main form select {
     display: block;
-    border-radius: 15px;
-    border: 1px solid #E0E0E0;
-    background: #F7F8F8;
-    color: #695AC8;
-    font-family: 'Mulish', sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.2em;
+    height: 48px;
     width: 73.6vw;
-    height: auto;
-    margin: 12px 0px;
-    padding: 16px 16px;
+    min-height: fit-content;
 }
 
 .contacto-main form option {
-    border-radius: 15px;
-    border: 1px solid #E0E0E0;
-    background: #F7F8F8;
-    color: #695AC8;
-    font-family: 'Mulish', sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.2em;
     width: 100%;
-    height: 40px;
-    margin: 40px 0px;
-    padding: 16px 24px;
 }
 
 .radio-probado {
@@ -1025,24 +1083,8 @@ input[type=radio] {
 .contacto-main form textarea {
     display: block;
     overflow: auto;
-    border-radius: 15px;
-    border: 1px solid #E0E0E0;
-    background: #F7F8F8;
-    color: #695AC8;
-    font-family: 'Mulish', sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.2em;
-    letter-spacing: 0.14px;
     width: 88%;
     min-height: 400px;
-    margin: 24px 0px;
-    padding: 16px 24px;
-}
-
-.contacto-main form textarea:focus {
-    border: 1px solid #32F5F5;
 }
 
 .asterisco {
@@ -1073,7 +1115,7 @@ input[type=radio] {
     display: block;
     color: #32F5F5;
     font-family: 'Mulish', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -1095,7 +1137,7 @@ input[type=radio] {
 
 .datos {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -1103,18 +1145,18 @@ input[type=radio] {
 .datos p {
     color: #695AC8;
     font-family: 'Mulish', sans-serif;
-    font-size: 13px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
 }
 
 .datos .p-tel::before {
-    content: url(img/ic-tel.svg);
+    content: url(../img/ic-tel.svg);
 }
 
-.datos .p-email::before {
-    content: url(img/ic-email.svg);
+.datos .p-mail::before {
+    content: url(../img/ic-email.svg);
 }
 
 /* Media Queries */
@@ -1122,70 +1164,84 @@ input[type=radio] {
 @media (max-width: 834px), screen and (orientation: portrait) {
 
     .contacto-main {
-        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
         grid-template-columns: 1fr;
+        align-self: center;
+        justify-self: center;
     }
 
     .contacto-encabezado {
-        padding: 4% 8%;
+        padding: 2% 4%;
     }
 
-    .contacto-main h1,
-    h2 {
-        font-size: 48px;
+    .contacto-main h1 {
+        font-size: 44px;
         text-align: center;
     }
 
     .contacto-main h2 {
         color: #FFFFFF;
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .contacto-main h5 {
         color: #32F5F5;
-        font-size: 24px;
+        font-size: 22px;
         margin-bottom: 16px;
     }
 
     .contacto-form-contenedor {
-        width: 72vw;
+        width: 80vw;
     }
 
     .contacto-main form {
-        width: 72vw;
+        width: 80vw;
     }
 
     .contacto-main form fieldset {
-        width: 72vw;
+        width: 76vw;
     }
 
     .contacto-main form label {
         color: #695AC8;
         font-family: 'Mulish', sans-serif;
-        font-size: 16px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 500;
         line-height: 1.2em;
-        margin: 8px 0px 6px 0px;
+        margin: 8px 0px 8px 0px;
         padding: 0;
     }
-
-    .contacto-main form input[type=text] {
-        width: 72vw;
-        height: 32px;
-        font-size: 14px;
+    
+    /* Estilo para todos los inputs, incluyendo estado default y placeholder */
+    .contacto-main form input[type=text],
+    .contacto-main form input[type=email],
+    .contacto-main form input[type=tel],
+    .contacto-main form input[type=url],
+    .contacto-main form input[type=number],
+    .contacto-main form textarea,
+    .contacto-main form select,
+    .contacto-main form option {
+        width: 100%;
+        height: 48px;
+        min-height: fit-content;
+        font-size: 16px;
         line-height: 1.2em;
+        margin: 8px 0px 24px 0px;
+        padding: 8px 16px;
+    }
+    
+    .contacto-main form input[type=checkbox],
+    .contacto-main form input[type=radio] {
+        width: 24px;
+        height: 24px;
+        margin: 8px 16px;
+        padding: 8px 8px;
     }
 
-    .contacto-main form select {
-        width: 76vw;
-    }
-
-    .contacto-main form textarea {
-        font-size: 24px;
-        line-height: 1.2em;
-        width: 70vw;
-        min-height: 300px;
+    .datos {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
     }
 }
 
@@ -1193,83 +1249,64 @@ input[type=radio] {
 @media (max-width: 1194px), screen and (orientation: landscape) {
 
     .contacto-main {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 16px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "contacto-encabezado contacto-encabezado contacto-encabezado contacto-encabezado"
-            "area-contact-form area-contact-form area-contact-form area-contact-form"
-            "area-contact-form area-contact-form area-contact-form area-contact-form";
-        margin: 0;
-        padding: 16px 8%;
+        grid-template-columns: 1fr;
     }
 
     .contacto-encabezado {
-        grid-area: contacto-encabezado;
         padding: 2% 4%;
     }
 
     .contacto-main h1,
     h2 {
         font-size: 48px;
-        margin-bottom: 16px;
         text-align: center;
     }
 
     .contacto-main h2 {
         color: #FFFFFF;
         font-size: 32px;
-        margin-bottom: 16px;
     }
 
     .contacto-main h5 {
         color: #32F5F5;
-        font-size: 32px;
-        margin-bottom: 16px;
-    }
-
-    .contacto-main .p-intro {
-        color: #FFFFFF;
         font-size: 24px;
-        line-height: 1.2em;
         margin-bottom: 16px;
     }
 
     .contacto-form-contenedor {
         width: 72vw;
-        height: auto;
-        padding: 64px 64px;
-        gap: 32px;
     }
 
     .contacto-main form {
-        width: 72vw;
+        width: 70vw;
     }
 
     .contacto-main form fieldset {
-        width: 72vw;
+        width: 64vw;
     }
 
     .contacto-main form label {
-        font-size: 24px;
-        font-style: normal;
-        line-height: 1.2em;
-        margin: 8px 0px 6px 0px;
+        font-size: 22px;
+    }
+    
+    /* Estilo para todos los inputs, incluyendo estado default y placeholder */
+    .contacto-main form input[type=text],
+    .contacto-main form input[type=email],
+    .contacto-main form input[type=tel],
+    .contacto-main form input[type=url],
+    .contacto-main form input[type=number],
+    .contacto-main form textarea,
+    .contacto-main form select,
+    .contacto-main form option {
+        width: 90%;
+        height: 48px;
+        min-height: fit-content;
+        font-size: 18px;
     }
 
-    .contacto-main form input[type=text] {
-        width: 72vw;
-        height: 40px;
-        line-height: 1.5em;
-        margin: 8px 0px 24px 0px;
-    }
-
-    .contacto-main form textarea {
-        font-size: 24px;
-        width: 71vw;
-        min-height: 400px;
-        margin: 24px 0px;
-        padding: 16px 24px;
+    .datos {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
     }
 }
